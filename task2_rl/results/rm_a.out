@@ -1,0 +1,45 @@
+step 100 loss 0.5726 66s
+step 200 loss 0.6244 129s
+step 300 loss 0.5389 216s
+step 400 loss 0.5629 286s
+step 500 loss 0.5502 377s
+step 600 loss 0.5818 465s
+step 700 loss 0.5492 579s
+step 800 loss 0.6079 696s
+step 900 loss 0.5661 784s
+step 1000 loss 0.6301 874s
+{"n": 30000, "ratio_mae": 0.2396, "ratio_rmse": 0.3247, "ratio_spearman": 0.6319, "complete_auc": 0.8715, "skip_auc": 0.8684, "like_auc": 0.8729, "like_ap": 0.1543, "like_base_rate": 0.0113, "cont_auc": 0.5952, "cont_base_rate": 0.9486, "baseline_global_mean_mae": 0.4089, "baseline_global_mean_complete_auc": 0.5, "baseline_item_mean_mae": 0.3892, "baseline_item_mean_complete_auc": 0.6163, "baseline_user_mean_mae": 0.3236, "baseline_user_mean_complete_auc": 0.7717, "baseline_user_item_avg_mae": 0.3548, "baseline_user_item_avg_complete_auc": 0.7743, "step": 1000}
+step 1100 loss 0.6377 1083s
+step 1200 loss 0.6038 1207s
+step 1300 loss 0.6284 1290s
+step 1400 loss 0.5315 1359s
+step 1500 loss 0.5086 1439s
+step 1600 loss 0.5845 1535s
+step 1700 loss 0.5287 1593s
+step 1800 loss 0.5602 1653s
+step 1900 loss 0.5631 1708s
+step 2000 loss 0.5741 1763s
+{"n": 30000, "ratio_mae": 0.2412, "ratio_rmse": 0.3224, "ratio_spearman": 0.6363, "complete_auc": 0.8739, "skip_auc": 0.8721, "like_auc": 0.8737, "like_ap": 0.1553, "like_base_rate": 0.0113, "cont_auc": 0.5946, "cont_base_rate": 0.9486, "baseline_global_mean_mae": 0.4089, "baseline_global_mean_complete_auc": 0.5, "baseline_item_mean_mae": 0.3892, "baseline_item_mean_complete_auc": 0.6163, "baseline_user_mean_mae": 0.3236, "baseline_user_mean_complete_auc": 0.7717, "baseline_user_item_avg_mae": 0.3548, "baseline_user_item_avg_complete_auc": 0.7743, "step": 2000}
+step 2100 loss 0.6047 1908s
+step 2200 loss 0.5858 1968s
+step 2300 loss 0.5937 2028s
+step 2400 loss 0.6120 2089s
+step 2500 loss 0.6034 2182s
+step 2600 loss 0.5774 2242s
+step 2700 loss 0.5869 2312s
+step 2800 loss 0.5925 2380s
+step 2900 loss 0.5707 2444s
+step 3000 loss 0.5909 2505s
+{"n": 30000, "ratio_mae": 0.2337, "ratio_rmse": 0.3214, "ratio_spearman": 0.6382, "complete_auc": 0.8749, "skip_auc": 0.8733, "like_auc": 0.877, "like_ap": 0.1585, "like_base_rate": 0.0113, "cont_auc": 0.5983, "cont_base_rate": 0.9486, "baseline_global_mean_mae": 0.4089, "baseline_global_mean_complete_auc": 0.5, "baseline_item_mean_mae": 0.3892, "baseline_item_mean_complete_auc": 0.6163, "baseline_user_mean_mae": 0.3236, "baseline_user_mean_complete_auc": 0.7717, "baseline_user_item_avg_mae": 0.3548, "baseline_user_item_avg_complete_auc": 0.7743, "step": 3000}
+step 3100 loss 0.5605 2608s
+step 3200 loss 0.5422 2666s
+step 3300 loss 0.5875 2724s
+step 3400 loss 0.5283 2781s
+step 3500 loss 0.5240 2839s
+step 3600 loss 0.5725 2895s
+step 3700 loss 0.5489 2950s
+step 3800 loss 0.5228 3008s
+step 3900 loss 0.5759 3065s
+step 4000 loss 0.5529 3124s
+{"n": 30000, "ratio_mae": 0.2329, "ratio_rmse": 0.3211, "ratio_spearman": 0.6394, "complete_auc": 0.8758, "skip_auc": 0.8737, "like_auc": 0.8766, "like_ap": 0.16, "like_base_rate": 0.0113, "cont_auc": 0.5989, "cont_base_rate": 0.9486, "baseline_global_mean_mae": 0.4089, "baseline_global_mean_complete_auc": 0.5, "baseline_item_mean_mae": 0.3892, "baseline_item_mean_complete_auc": 0.6163, "baseline_user_mean_mae": 0.3236, "baseline_user_mean_complete_auc": 0.7717, "baseline_user_item_avg_mae": 0.3548, "baseline_user_item_avg_complete_auc": 0.7743, "step": 4000}
+TEST {"n": 156920, "ratio_mae": 0.2243, "ratio_rmse": 0.3124, "ratio_spearman": 0.6432, "complete_auc": 0.8831, "skip_auc": 0.8823, "like_auc": 0.8939, "like_ap": 0.1517, "like_base_rate": 0.0105, "cont_auc": 0.5733, "cont_base_rate": 0.9506, "baseline_global_mean_mae": 0.4073, "baseline_global_mean_complete_auc": 0.5, "baseline_item_mean_mae": 0.4146, "baseline_item_mean_complete_auc": 0.5569, "baseline_user_mean_mae": 0.3469, "baseline_user_mean_complete_auc": 0.7102, "baseline_user_item_avg_mae": 0.3792, "baseline_user_item_avg_complete_auc": 0.6956}

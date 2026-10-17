@@ -1,0 +1,40 @@
+{"round": 0, "base_screen_ll": 0.4665821609070466, "n_candidates": 100, "n_accepted": 6, "time": 115.90583920478821, "total_time": 115.90584421157837, "src_stats": {"random": {"n": 100, "hit": 28, "best": 0.003327835292371184}, "mutation": {"n": 0, "hit": 0, "best": 0.0}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00333 (cond 0.00333) random   rate(is_click|user_id+upload_type|all|w=1d|a=10)
+   + 0.00284 (cond 0.00252) random   sum(is_click|music_id|all|w=7d)
+   + 0.00156 (cond 0.00166) random   sum(long_view|user_id+upload_type|all|w=7d)
+   + 0.00176 (cond 0.00052) random   rate(long_view|follow_user_num_range+author_id|all|w=inf|a=10)
+   + 0.00071 (cond 0.00015) random   rate(is_like|user_active_degree+video_id|clicked|w=7d|a=1)
+   + 0.00065 (cond 0.00007) random   rate(is_click|user_id+dur_bucket|rand|w=1h|a=10)
+{"round": 1, "base_screen_ll": 0.4585181193854041, "n_candidates": 149, "n_accepted": 11, "time": 135.42487335205078, "total_time": 251.33474707603455, "src_stats": {"random": {"n": 99, "hit": 8, "best": 0.005613310341011535}, "mutation": {"n": 50, "hit": 13, "best": 0.001398876708051}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00561 (cond 0.00561) random   rate(is_click|user_id|rand|w=inf|a=100)
+   + 0.00095 (cond 0.00108) random   rate(is_click|is_lowactive_period+video_id|all|w=inf|a=10)
+   + 0.00035 (cond 0.00077) mutation sum(long_view|user_id+upload_type|std|w=7d)
+   + 0.00072 (cond 0.00047) random   rate(is_click|register_days_range+music_id|rand|w=inf|a=1)
+   + 0.00060 (cond 0.00046) mutation sum(long_view|user_id|all|w=7d)
+{"round": 2, "base_screen_ll": 0.4477964142687998, "n_candidates": 153, "n_accepted": 18, "time": 130.49627447128296, "total_time": 381.836816072464, "src_stats": {"random": {"n": 100, "hit": 12, "best": 0.0018687407790264898}, "mutation": {"n": 53, "hit": 29, "best": 0.0031128731076928706}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00311 (cond 0.00311) mutation rate(is_click|user_id|std|w=inf|a=100)
+   + 0.00187 (cond 0.00172) random   sum(imp|user_id|all|w=7d)
+   + 0.00112 (cond 0.00111) mutation rate(is_click|author_id+is_rand|all|w=7d|a=10)
+   + 0.00051 (cond 0.00031) random   sum(long_view|user_id+tag|all|w=inf)
+   + 0.00073 (cond 0.00011) random   sum(long_view|is_lowactive_period+video_id|rand|w=7d)
+   + 0.00103 (cond 0.00010) mutation rate(play_s|user_id+upload_type|all|w=7d|a=10)
+   + 0.00062 (cond 0.00015) random   sum(imp|user_id+music_type|rand|w=1h)
+{"round": 3, "base_screen_ll": 0.4369312553198588, "n_candidates": 151, "n_accepted": 24, "time": 127.08468842506409, "total_time": 508.9513726234436, "src_stats": {"random": {"n": 100, "hit": 13, "best": 0.0003038093738940706}, "mutation": {"n": 51, "hit": 11, "best": 0.0002802295762595608}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00030 (cond 0.00030) random   sum(play_s|user_id+music_type|all|w=1h)
+   + 0.00020 (cond 0.00019) mutation sum(is_click|user_id|std|w=inf)
+   + 0.00017 (cond 0.00020) mutation rate(long_view|is_video_author+author_id|all|w=inf|a=10)
+   + 0.00020 (cond 0.00012) random   rate(is_click|register_days_range+author_id|rand|w=inf|a=1)
+   + 0.00013 (cond 0.00006) mutation rate(is_click|user_id+is_rand|rand|w=inf|a=100)
+   + 0.00019 (cond 0.00007) random   rate(is_click|video_id+hour|std|w=7d|a=1)
+{"round": 4, "base_screen_ll": 0.4348137950611715, "n_candidates": 148, "n_accepted": 27, "time": 114.54522848129272, "total_time": 623.5088896751404, "src_stats": {"random": {"n": 99, "hit": 6, "best": 0.0002048842467211598}, "mutation": {"n": 49, "hit": 12, "best": 0.0004076236021547941}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00023 (cond 0.00023) mutation rate(is_click|user_id+music_type|all|w=7d|a=10)
+   + 0.00020 (cond 0.00021) random   sum(is_click|follow_user_num_range+hour|all|w=1h)
+   + 0.00006 (cond 0.00007) mutation sum(is_click|follow_user_num_range+music_id|all|w=inf)
+{"round": 5, "base_screen_ll": 0.4347790463351159, "n_candidates": 149, "n_accepted": 31, "time": 131.05586743354797, "total_time": 754.5793569087982, "src_stats": {"random": {"n": 100, "hit": 7, "best": 0.000257756517486718}, "mutation": {"n": 49, "hit": 6, "best": 0.00042737179059088026}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00043 (cond 0.00043) mutation rate(is_click|author_id+is_rand|rand|w=7d|a=10)
+   + 0.00018 (cond 0.00014) random   rate(is_click|follow_user_num_range+tab|all|w=1d|a=10)
+   + 0.00010 (cond 0.00012) mutation rate(is_click|user_id|all|w=1d|a=10)
+   + 0.00026 (cond 0.00010) random   sum(long_view|music_id+is_rand|rand|w=inf)
+autofe_grid_s1 0 {"val": {"logloss": 0.4313, "auc": 0.7935, "gauc": 0.6375, "ndcg10": 0.7248, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4226, "auc": 0.7871, "gauc": 0.6456, "ndcg10": 0.7123, "n": 475980, "groups": 35150}}
+autofe_grid_s1 1 {"val": {"logloss": 0.4312, "auc": 0.7937, "gauc": 0.6374, "ndcg10": 0.7247, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4232, "auc": 0.7865, "gauc": 0.6473, "ndcg10": 0.7143, "n": 475980, "groups": 35150}}
+autofe_grid_s1 2 {"val": {"logloss": 0.4313, "auc": 0.7936, "gauc": 0.6367, "ndcg10": 0.7244, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4232, "auc": 0.7864, "gauc": 0.6451, "ndcg10": 0.7133, "n": 475980, "groups": 35150}}

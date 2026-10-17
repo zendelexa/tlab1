@@ -1,0 +1,73 @@
+=== Thu Oct 15 20:38:20 RTZ 2026 START autofe main (logloss)
+{"round": 0, "base_screen_ll": 0.4665821609070466, "n_candidates": 100, "n_accepted": 6, "time": 139.9784197807312, "total_time": 139.97843194007874, "src_stats": {"random": {"n": 100, "hit": 28, "best": 0.005695633312217396}, "mutation": {"n": 0, "hit": 0, "best": 0.0}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.44987, "auc": 0.77022, "gauc": 0.58957, "ndcg10": 0.69379, "n": 442975, "groups": 34762}, "std": {"logloss": 0.59877, "auc": 0.72955, "gauc": 0.63043, "ndcg10": 0.83521, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.4186, "auc": 0.73381, "gauc": 0.58365, "ndcg10": 0.64024, "n": 366088, "groups": 25213}}}
+   + 0.00570 (cond 0.00570) random   drate(is_click|user_id+music_type+is_rand|rand|hl=13.36h|a=10)
+   + 0.00279 (cond 0.00263) random   dsum(is_click|video_id|all|hl=1.469d)
+   + 0.00228 (cond 0.00108) random   recency(imp|user_id+music_type|all)
+   + 0.00130 (cond 0.00136) random   sum(play_ratio|user_id+upload_type|rand|w=inf)
+   + 0.00083 (cond 0.00008) random   drate(play_ratio|fans_user_num_range+music_id+tab|std|hl=3.318d|a=1)
+   + 0.00247 (cond 0.00006) random   recency(play_s|user_id+video_type|rand)
+{"round": 1, "base_screen_ll": 0.45371588452506817, "n_candidates": 156, "n_accepted": 13, "time": 140.96837067604065, "total_time": 412.5526351928711, "src_stats": {"random": {"n": 100, "hit": 34, "best": 0.0007671728823480106}, "mutation": {"n": 56, "hit": 19, "best": 0.0011204105000339193}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.44491, "auc": 0.77581, "gauc": 0.5823, "ndcg10": 0.68159, "n": 442975, "groups": 34762}, "std": {"logloss": 0.59528, "auc": 0.73666, "gauc": 0.52722, "ndcg10": 0.78404, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.41333, "auc": 0.7417, "gauc": 0.59028, "ndcg10": 0.64279, "n": 366088, "groups": 25213}}}
+   + 0.00112 (cond 0.00112) mutation drate(is_click|user_id+music_type+is_rand|all|hl=13.36h|a=10)
+   + 0.00077 (cond 0.00064) random   dsum(imp|user_id+tag|clicked|hl=18.33h)
+   + 0.00081 (cond 0.00058) mutation rate(play_s|user_id+video_type|rand|w=36.46m|a=1)
+   + 0.00040 (cond 0.00043) mutation sum(imp|user_id+upload_type|rand|w=inf)
+   + 0.00079 (cond 0.00036) mutation recency(long_view|user_id+music_type|all)
+   + 0.00042 (cond 0.00029) random   rate(long_view|music_type|all|w=inf|a=10)
+   + 0.00034 (cond 0.00013) random   drate(play_ratio|fans_user_num_range+music_id|all|hl=9.842h|a=10)
+{"round": 2, "base_screen_ll": 0.45001101293202717, "n_candidates": 155, "n_accepted": 18, "time": 123.20336365699768, "total_time": 628.7437589168549, "src_stats": {"random": {"n": 100, "hit": 6, "best": 0.0010769735196741181}, "mutation": {"n": 55, "hit": 15, "best": 0.002558947423687674}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43795, "auc": 0.78567, "gauc": 0.60872, "ndcg10": 0.70216, "n": 442975, "groups": 34762}, "std": {"logloss": 0.58766, "auc": 0.74757, "gauc": 0.56447, "ndcg10": 0.80165, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40651, "auc": 0.75465, "gauc": 0.61513, "ndcg10": 0.66448, "n": 366088, "groups": 25213}}}
+   + 0.00256 (cond 0.00256) mutation rate(play_s|user_id+video_type|rand|w=inf|a=1)
+   + 0.00108 (cond 0.00129) random   drate(is_click|is_video_author+music_id|all|hl=3.427d|a=10)
+   + 0.00071 (cond 0.00067) mutation dsum(imp|user_id+music_type|all|hl=3d)
+   + 0.00012 (cond 0.00029) mutation drate(is_click|user_id+music_type|rand|hl=13.36h|a=10)
+   + 0.00024 (cond 0.00013) mutation sum(play_ratio|user_id+upload_type|clicked|w=inf)
+{"round": 3, "base_screen_ll": 0.44244142923447455, "n_candidates": 153, "n_accepted": 22, "time": 140.18054175376892, "total_time": 862.6756644248962, "src_stats": {"random": {"n": 100, "hit": 3, "best": 0.00011388676252083174}, "mutation": {"n": 53, "hit": 13, "best": 0.0012510018085255536}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43544, "auc": 0.78876, "gauc": 0.61925, "ndcg10": 0.71097, "n": 442975, "groups": 34762}, "std": {"logloss": 0.58137, "auc": 0.75496, "gauc": 0.58026, "ndcg10": 0.81003, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40479, "auc": 0.75801, "gauc": 0.62489, "ndcg10": 0.67346, "n": 366088, "groups": 25213}}}
+   + 0.00125 (cond 0.00125) mutation rate(play_s|user_id+video_type|all|w=inf|a=1)
+   + 0.00027 (cond 0.00029) mutation drate(is_click|is_video_author+music_id|rand|hl=3.427d|a=10)
+   + 0.00006 (cond 0.00010) random   dsum(long_view|user_id+music_type|rand|hl=1.893d)
+   + 0.00007 (cond 0.00006) random   dsum(play_s|video_type+hour|all|hl=8.933h)
+{"round": 4, "base_screen_ll": 0.4385377093743511, "n_candidates": 152, "n_accepted": 26, "time": 167.74122214317322, "total_time": 1186.5514285564423, "src_stats": {"random": {"n": 100, "hit": 5, "best": 0.00010879966274618402}, "mutation": {"n": 52, "hit": 4, "best": 0.00011278815533261044}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43495, "auc": 0.78917, "gauc": 0.61791, "ndcg10": 0.71001, "n": 442975, "groups": 34762}, "std": {"logloss": 0.58004, "auc": 0.75535, "gauc": 0.5758, "ndcg10": 0.80844, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40448, "auc": 0.75831, "gauc": 0.62401, "ndcg10": 0.67273, "n": 366088, "groups": 25213}}}
+   + 0.00011 (cond 0.00011) random   drate(play_ratio|author_id|all|hl=2.584d|a=1)
+   + 0.00008 (cond 0.00010) mutation rate(long_view|user_id+video_type|rand|w=inf|a=1)
+   + 0.00010 (cond 0.00010) random   sum(is_click|user_id+author_id|all|w=12.75d)
+   + 0.00008 (cond 0.00009) mutation rate(play_s|user_id+music_id|all|w=inf|a=1)
+<repo>\.venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"round": 5, "base_screen_ll": 0.43820135749655653, "n_candidates": 151, "n_accepted": 29, "time": 145.76046419143677, "total_time": 1438.4722862243652, "src_stats": {"random": {"n": 100, "hit": 2, "best": 0.00015130882672481638}, "mutation": {"n": 51, "hit": 3, "best": 0.00014402175109085036}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.4343, "auc": 0.7898, "gauc": 0.62219, "ndcg10": 0.71327, "n": 442975, "groups": 34762}, "std": {"logloss": 0.57783, "auc": 0.75758, "gauc": 0.5897, "ndcg10": 0.81486, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40415, "auc": 0.75888, "gauc": 0.6269, "ndcg10": 0.67479, "n": 366088, "groups": 25213}}}
+   + 0.00015 (cond 0.00015) random   rate(is_forward|author_id+is_rand|all|w=2.911d|a=10)
+   + 0.00008 (cond 0.00011) random   rate(is_click|is_lowactive_period+author_id|std|w=7.636d|a=10)
+   + 0.00009 (cond 0.00008) mutation recency(imp|user_id+music_type+hour|all)
+{"round": 6, "base_screen_ll": 0.4370021758974391, "n_candidates": 152, "n_accepted": 32, "time": 156.32119512557983, "total_time": 1722.282931804657, "src_stats": {"random": {"n": 100, "hit": 4, "best": 0.00029146458584444757}, "mutation": {"n": 52, "hit": 7, "best": 0.00014748913106521488}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43337, "auc": 0.79088, "gauc": 0.62186, "ndcg10": 0.71401, "n": 442975, "groups": 34762}, "std": {"logloss": 0.57601, "auc": 0.75965, "gauc": 0.59241, "ndcg10": 0.81621, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40341, "auc": 0.76022, "gauc": 0.62612, "ndcg10": 0.6753, "n": 366088, "groups": 25213}}}
+   + 0.00029 (cond 0.00029) random   drate(play_ratio|user_id+music_type|std|hl=4.143d|a=10)
+   + 0.00021 (cond 0.00028) random   sum(long_view|video_id+is_rand|all|w=6.35d)
+   + 0.00014 (cond 0.00012) mutation drate(is_click|user_id+is_rand|rand|hl=13.36h|a=10)
+{"round": 7, "base_screen_ll": 0.43654470383478705, "n_candidates": 152, "n_accepted": 33, "time": 159.351003408432, "total_time": 2024.8185238838196, "src_stats": {"random": {"n": 100, "hit": 0, "best": 3.746599468956724e-05}, "mutation": {"n": 52, "hit": 6, "best": 0.0001427961839337577}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43347, "auc": 0.79075, "gauc": 0.62164, "ndcg10": 0.71355, "n": 442975, "groups": 34762}, "std": {"logloss": 0.57636, "auc": 0.75928, "gauc": 0.58496, "ndcg10": 0.81285, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40345, "auc": 0.76, "gauc": 0.62695, "ndcg10": 0.67594, "n": 366088, "groups": 25213}}}
+   + 0.00013 (cond 0.00013) mutation rate(play_s|user_id+video_type|rand|w=inf|a=10)
+{"round": 8, "base_screen_ll": 0.4365497701878267, "n_candidates": 151, "n_accepted": 36, "time": 170.04703736305237, "total_time": 2342.3501720428467, "src_stats": {"random": {"n": 100, "hit": 3, "best": 0.00010871303142606648}, "mutation": {"n": 51, "hit": 4, "best": 0.00017507671835420568}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43333, "auc": 0.791, "gauc": 0.62219, "ndcg10": 0.71303, "n": 442975, "groups": 34762}, "std": {"logloss": 0.57686, "auc": 0.75878, "gauc": 0.58344, "ndcg10": 0.81163, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.40318, "auc": 0.76054, "gauc": 0.6278, "ndcg10": 0.67569, "n": 366088, "groups": 25213}}}
+   + 0.00018 (cond 0.00018) mutation rate(play_s|user_id+video_type+is_rand|rand|w=inf|a=1)
+   + 0.00011 (cond 0.00011) random   rate(is_click|fans_user_num_range+author_id|all|w=inf|a=10)
+   + 0.00008 (cond 0.00006) random   sum(play_s|follow_user_num_range+tab|all|w=5.436d)
+{"round": 9, "base_screen_ll": 0.4362432616256049, "n_candidates": 151, "n_accepted": 38, "time": 277.71689796447754, "total_time": 2883.8579885959625, "src_stats": {"random": {"n": 100, "hit": 1, "best": 0.0004015068942146427}, "mutation": {"n": 51, "hit": 4, "best": 0.0002194241215909276}, "agent": {"n": 0, "hit": 0, "best": 0.0}}, "val": {"all": {"logloss": 0.43244, "auc": 0.79195, "gauc": 0.6268, "ndcg10": 0.71706, "n": 442975, "groups": 34762}, "std": {"logloss": 0.57405, "auc": 0.76191, "gauc": 0.59253, "ndcg10": 0.8155, "n": 76887, "groups": 9549}, "rand": {"logloss": 0.4027, "auc": 0.76116, "gauc": 0.63176, "ndcg10": 0.67978, "n": 366088, "groups": 25213}}}
+   + 0.00040 (cond 0.00040) random   rate(is_click|user_id|all|w=26.83d|a=10)
+   + 0.00008 (cond 0.00007) mutation sum(long_view|user_id+upload_type|rand|w=inf)
+autofe_main_s0 0 {"val": {"logloss": 0.4324, "auc": 0.7919, "gauc": 0.6268, "ndcg10": 0.7171, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4247, "auc": 0.7842, "gauc": 0.6361, "ndcg10": 0.7054, "n": 475980, "groups": 35150}}
+autofe_main_s0 1 {"val": {"logloss": 0.4323, "auc": 0.7921, "gauc": 0.6261, "ndcg10": 0.716, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4245, "auc": 0.7844, "gauc": 0.6346, "ndcg10": 0.7037, "n": 475980, "groups": 35150}}
+autofe_main_s0 2 {"val": {"logloss": 0.4323, "auc": 0.7922, "gauc": 0.6271, "ndcg10": 0.7164, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4243, "auc": 0.7848, "gauc": 0.6361, "ndcg10": 0.7047, "n": 475980, "groups": 35150}}
+trial 0 {'num_leaves': 255, 'learning_rate': 0.1, 'min_data_in_leaf': 400, 'feature_fraction': 0.6, 'lambda_l2': 1.0, 'bagging_fraction': 0.7} 0.43358 89
+trial 1 {'num_leaves': 15, 'learning_rate': 0.05, 'min_data_in_leaf': 20, 'feature_fraction': 1.0, 'lambda_l2': 10.0, 'bagging_fraction': 1.0} 0.43266 1401
+trial 2 {'num_leaves': 63, 'learning_rate': 0.1, 'min_data_in_leaf': 1000, 'feature_fraction': 0.8, 'lambda_l2': 10.0, 'bagging_fraction': 0.85} 0.43294 245
+trial 3 {'num_leaves': 63, 'learning_rate': 0.1, 'min_data_in_leaf': 100, 'feature_fraction': 1.0, 'lambda_l2': 10.0, 'bagging_fraction': 0.7} 0.43318 157
+trial 4 {'num_leaves': 31, 'learning_rate': 0.1, 'min_data_in_leaf': 400, 'feature_fraction': 0.4, 'lambda_l2': 50.0, 'bagging_fraction': 1.0} 0.43268 423
+trial 5 {'num_leaves': 255, 'learning_rate': 0.05, 'min_data_in_leaf': 20, 'feature_fraction': 1.0, 'lambda_l2': 0.0, 'bagging_fraction': 0.85} 0.43347 159
+trial 6 {'num_leaves': 15, 'learning_rate': 0.05, 'min_data_in_leaf': 100, 'feature_fraction': 0.6, 'lambda_l2': 1.0, 'bagging_fraction': 0.7} 0.43263 1327
+trial 7 {'num_leaves': 15, 'learning_rate': 0.05, 'min_data_in_leaf': 20, 'feature_fraction': 0.8, 'lambda_l2': 10.0, 'bagging_fraction': 0.85} 0.43241 1451
+trial 8 {'num_leaves': 31, 'learning_rate': 0.1, 'min_data_in_leaf': 1000, 'feature_fraction': 0.6, 'lambda_l2': 1.0, 'bagging_fraction': 1.0} 0.43288 359
+trial 9 {'num_leaves': 255, 'learning_rate': 0.1, 'min_data_in_leaf': 100, 'feature_fraction': 0.8, 'lambda_l2': 50.0, 'bagging_fraction': 0.85} 0.43325 130
+trial 10 {'num_leaves': 255, 'learning_rate': 0.1, 'min_data_in_leaf': 400, 'feature_fraction': 0.6, 'lambda_l2': 50.0, 'bagging_fraction': 0.7} 0.43334 128
+trial 11 {'num_leaves': 63, 'learning_rate': 0.1, 'min_data_in_leaf': 1000, 'feature_fraction': 0.8, 'lambda_l2': 1.0, 'bagging_fraction': 0.7} 0.43289 242
+autofe_main_s0_tuned 0 {"val": {"logloss": 0.4324, "auc": 0.7921, "gauc": 0.6263, "ndcg10": 0.7158, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4246, "auc": 0.7844, "gauc": 0.6371, "ndcg10": 0.7061, "n": 475980, "groups": 35150}}
+autofe_main_s0_tuned 1 {"val": {"logloss": 0.4324, "auc": 0.7922, "gauc": 0.6272, "ndcg10": 0.7167, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4244, "auc": 0.7848, "gauc": 0.639, "ndcg10": 0.707, "n": 475980, "groups": 35150}}
+autofe_main_s0_tuned 2 {"val": {"logloss": 0.4324, "auc": 0.7921, "gauc": 0.6261, "ndcg10": 0.7159, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4247, "auc": 0.7843, "gauc": 0.6364, "ndcg10": 0.7051, "n": 475980, "groups": 35150}}
+autofe_main_s0_union 0 {"val": {"logloss": 0.4302, "auc": 0.7951, "gauc": 0.6324, "ndcg10": 0.7198, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4218, "auc": 0.7883, "gauc": 0.6439, "ndcg10": 0.7098, "n": 475980, "groups": 35150}}
+autofe_main_s0_union 1 {"val": {"logloss": 0.4301, "auc": 0.7952, "gauc": 0.6318, "ndcg10": 0.7192, "n": 442975, "groups": 34762}, "test": {"logloss": 0.422, "auc": 0.7884, "gauc": 0.6415, "ndcg10": 0.7083, "n": 475980, "groups": 35150}}
+autofe_main_s0_union 2 {"val": {"logloss": 0.4299, "auc": 0.7953, "gauc": 0.6317, "ndcg10": 0.7192, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4215, "auc": 0.7887, "gauc": 0.6418, "ndcg10": 0.7086, "n": 475980, "groups": 35150}}
+=== Thu Oct 15 22:12:12 RTZ 2026 END rc=0

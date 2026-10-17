@@ -1,0 +1,5355 @@
+{
+ "log": [
+  {
+   "round": 0,
+   "base_screen_ll": 0.4665821609070466,
+   "n_candidates": 100,
+   "added": [
+    {
+     "name": "rate(is_click|user_id+upload_type|all|w=1d|a=10)",
+     "gain": 0.003327835292371184,
+     "cond_gain": 0.003327835292371184,
+     "source": "random"
+    },
+    {
+     "name": "sum(is_click|music_id|all|w=7d)",
+     "gain": 0.002840184476507357,
+     "cond_gain": 0.0025202908963210535,
+     "source": "random"
+    },
+    {
+     "name": "sum(long_view|user_id+upload_type|all|w=7d)",
+     "gain": 0.0015563820338872492,
+     "cond_gain": 0.0016627042163703254,
+     "source": "random"
+    },
+    {
+     "name": "rate(long_view|follow_user_num_range+author_id|all|w=inf|a=10)",
+     "gain": 0.001761929884155411,
+     "cond_gain": 0.0005189670460391538,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_like|user_active_degree+video_id|clicked|w=7d|a=1)",
+     "gain": 0.0007082263617703144,
+     "cond_gain": 0.00015453825590344694,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_click|user_id+dur_bucket|rand|w=1h|a=10)",
+     "gain": 0.0006531170943782638,
+     "cond_gain": 7.354240910439902e-05,
+     "source": "random"
+    }
+   ],
+   "n_accepted": 6,
+   "time": 115.90583920478821,
+   "total_time": 115.90584421157837,
+   "src_stats": {
+    "random": {
+     "n": 100,
+     "hit": 28,
+     "best": 0.003327835292371184
+    },
+    "mutation": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  },
+  {
+   "round": 1,
+   "base_screen_ll": 0.4585181193854041,
+   "n_candidates": 149,
+   "added": [
+    {
+     "name": "rate(is_click|user_id|rand|w=inf|a=100)",
+     "gain": 0.005613310341011535,
+     "cond_gain": 0.005613310341011535,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_click|is_lowactive_period+video_id|all|w=inf|a=10)",
+     "gain": 0.000947717212207877,
+     "cond_gain": 0.0010826334289160688,
+     "source": "random"
+    },
+    {
+     "name": "sum(long_view|user_id+upload_type|std|w=7d)",
+     "gain": 0.00034833679792722894,
+     "cond_gain": 0.0007709589507716164,
+     "source": "mutation"
+    },
+    {
+     "name": "rate(is_click|register_days_range+music_id|rand|w=inf|a=1)",
+     "gain": 0.0007215359082565209,
+     "cond_gain": 0.00046697338092316354,
+     "source": "random"
+    },
+    {
+     "name": "sum(long_view|user_id|all|w=7d)",
+     "gain": 0.0006018655440337417,
+     "cond_gain": 0.0004618277180502006,
+     "source": "mutation"
+    }
+   ],
+   "n_accepted": 11,
+   "time": 135.42487335205078,
+   "total_time": 251.33474707603455,
+   "src_stats": {
+    "random": {
+     "n": 99,
+     "hit": 8,
+     "best": 0.005613310341011535
+    },
+    "mutation": {
+     "n": 50,
+     "hit": 13,
+     "best": 0.001398876708051
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  },
+  {
+   "round": 2,
+   "base_screen_ll": 0.4477964142687998,
+   "n_candidates": 153,
+   "added": [
+    {
+     "name": "rate(is_click|user_id|std|w=inf|a=100)",
+     "gain": 0.0031128731076928706,
+     "cond_gain": 0.0031128731076928706,
+     "source": "mutation"
+    },
+    {
+     "name": "sum(imp|user_id|all|w=7d)",
+     "gain": 0.0018687407790264898,
+     "cond_gain": 0.0017243742762655945,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_click|author_id+is_rand|all|w=7d|a=10)",
+     "gain": 0.0011183124672460298,
+     "cond_gain": 0.0011094854237018725,
+     "source": "mutation"
+    },
+    {
+     "name": "sum(long_view|user_id+tag|all|w=inf)",
+     "gain": 0.0005143142789947874,
+     "cond_gain": 0.00030841760723226974,
+     "source": "random"
+    },
+    {
+     "name": "sum(long_view|is_lowactive_period+video_id|rand|w=7d)",
+     "gain": 0.0007348877380671803,
+     "cond_gain": 0.00010649942594936901,
+     "source": "random"
+    },
+    {
+     "name": "rate(play_s|user_id+upload_type|all|w=7d|a=10)",
+     "gain": 0.0010336278039900226,
+     "cond_gain": 0.00010212857196573166,
+     "source": "mutation"
+    },
+    {
+     "name": "sum(imp|user_id+music_type|rand|w=1h)",
+     "gain": 0.0006194838994391105,
+     "cond_gain": 0.00015164515313792482,
+     "source": "random"
+    }
+   ],
+   "n_accepted": 18,
+   "time": 130.49627447128296,
+   "total_time": 381.836816072464,
+   "src_stats": {
+    "random": {
+     "n": 100,
+     "hit": 12,
+     "best": 0.0018687407790264898
+    },
+    "mutation": {
+     "n": 53,
+     "hit": 29,
+     "best": 0.0031128731076928706
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  },
+  {
+   "round": 3,
+   "base_screen_ll": 0.4369312553198588,
+   "n_candidates": 151,
+   "added": [
+    {
+     "name": "sum(play_s|user_id+music_type|all|w=1h)",
+     "gain": 0.0003038093738940706,
+     "cond_gain": 0.0003038093738940706,
+     "source": "random"
+    },
+    {
+     "name": "sum(is_click|user_id|std|w=inf)",
+     "gain": 0.0001972071790918295,
+     "cond_gain": 0.00019326593866009212,
+     "source": "mutation"
+    },
+    {
+     "name": "rate(long_view|is_video_author+author_id|all|w=inf|a=10)",
+     "gain": 0.00017459017265258892,
+     "cond_gain": 0.00020153308696785333,
+     "source": "mutation"
+    },
+    {
+     "name": "rate(is_click|register_days_range+author_id|rand|w=inf|a=1)",
+     "gain": 0.00019632600788127563,
+     "cond_gain": 0.00012053809395240478,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_click|user_id+is_rand|rand|w=inf|a=100)",
+     "gain": 0.0001325169102732171,
+     "cond_gain": 6.291581896644693e-05,
+     "source": "mutation"
+    },
+    {
+     "name": "rate(is_click|video_id+hour|std|w=7d|a=1)",
+     "gain": 0.00018675200210965803,
+     "cond_gain": 7.339912889209321e-05,
+     "source": "random"
+    }
+   ],
+   "n_accepted": 24,
+   "time": 127.08468842506409,
+   "total_time": 508.9513726234436,
+   "src_stats": {
+    "random": {
+     "n": 100,
+     "hit": 13,
+     "best": 0.0003038093738940706
+    },
+    "mutation": {
+     "n": 51,
+     "hit": 11,
+     "best": 0.0002802295762595608
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  },
+  {
+   "round": 4,
+   "base_screen_ll": 0.4348137950611715,
+   "n_candidates": 148,
+   "added": [
+    {
+     "name": "rate(is_click|user_id+music_type|all|w=7d|a=10)",
+     "gain": 0.0002305645533131062,
+     "cond_gain": 0.0002305645533131062,
+     "source": "mutation"
+    },
+    {
+     "name": "sum(is_click|follow_user_num_range+hour|all|w=1h)",
+     "gain": 0.0002048842467211598,
+     "cond_gain": 0.00020823713770390384,
+     "source": "random"
+    },
+    {
+     "name": "sum(is_click|follow_user_num_range+music_id|all|w=inf)",
+     "gain": 5.632943422917425e-05,
+     "cond_gain": 7.005562988932068e-05,
+     "source": "mutation"
+    }
+   ],
+   "n_accepted": 27,
+   "time": 114.54522848129272,
+   "total_time": 623.5088896751404,
+   "src_stats": {
+    "random": {
+     "n": 99,
+     "hit": 6,
+     "best": 0.0002048842467211598
+    },
+    "mutation": {
+     "n": 49,
+     "hit": 12,
+     "best": 0.0004076236021547941
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  },
+  {
+   "round": 5,
+   "base_screen_ll": 0.4347790463351159,
+   "n_candidates": 149,
+   "added": [
+    {
+     "name": "rate(is_click|author_id+is_rand|rand|w=7d|a=10)",
+     "gain": 0.00042737179059088026,
+     "cond_gain": 0.00042737179059088026,
+     "source": "mutation"
+    },
+    {
+     "name": "rate(is_click|follow_user_num_range+tab|all|w=1d|a=10)",
+     "gain": 0.00017722625355232058,
+     "cond_gain": 0.0001436251844365577,
+     "source": "random"
+    },
+    {
+     "name": "rate(is_click|user_id|all|w=1d|a=10)",
+     "gain": 9.806079556728964e-05,
+     "cond_gain": 0.00012287765209045842,
+     "source": "mutation"
+    },
+    {
+     "name": "sum(long_view|music_id+is_rand|rand|w=inf)",
+     "gain": 0.000257756517486718,
+     "cond_gain": 0.00010124889645030111,
+     "source": "random"
+    }
+   ],
+   "n_accepted": 31,
+   "time": 131.05586743354797,
+   "total_time": 754.5793569087982,
+   "src_stats": {
+    "random": {
+     "n": 100,
+     "hit": 7,
+     "best": 0.000257756517486718
+    },
+    "mutation": {
+     "n": 49,
+     "hit": 6,
+     "best": 0.00042737179059088026
+    },
+    "agent": {
+     "n": 0,
+     "hit": 0,
+     "best": 0.0
+    }
+   }
+  }
+ ],
+ "accepted": [
+  "rate(is_click|user_id+upload_type|all|w=1d|a=10)",
+  "sum(is_click|music_id|all|w=7d)",
+  "sum(long_view|user_id+upload_type|all|w=7d)",
+  "rate(long_view|follow_user_num_range+author_id|all|w=inf|a=10)",
+  "rate(is_like|user_active_degree+video_id|clicked|w=7d|a=1)",
+  "rate(is_click|user_id+dur_bucket|rand|w=1h|a=10)",
+  "rate(is_click|user_id|rand|w=inf|a=100)",
+  "rate(is_click|is_lowactive_period+video_id|all|w=inf|a=10)",
+  "sum(long_view|user_id+upload_type|std|w=7d)",
+  "rate(is_click|register_days_range+music_id|rand|w=inf|a=1)",
+  "sum(long_view|user_id|all|w=7d)",
+  "rate(is_click|user_id|std|w=inf|a=100)",
+  "sum(imp|user_id|all|w=7d)",
+  "rate(is_click|author_id+is_rand|all|w=7d|a=10)",
+  "sum(long_view|user_id+tag|all|w=inf)",
+  "sum(long_view|is_lowactive_period+video_id|rand|w=7d)",
+  "rate(play_s|user_id+upload_type|all|w=7d|a=10)",
+  "sum(imp|user_id+music_type|rand|w=1h)",
+  "sum(play_s|user_id+music_type|all|w=1h)",
+  "sum(is_click|user_id|std|w=inf)",
+  "rate(long_view|is_video_author+author_id|all|w=inf|a=10)",
+  "rate(is_click|register_days_range+author_id|rand|w=inf|a=1)",
+  "rate(is_click|user_id+is_rand|rand|w=inf|a=100)",
+  "rate(is_click|video_id+hour|std|w=7d|a=1)",
+  "rate(is_click|user_id+music_type|all|w=7d|a=10)",
+  "sum(is_click|follow_user_num_range+hour|all|w=1h)",
+  "sum(is_click|follow_user_num_range+music_id|all|w=inf)",
+  "rate(is_click|author_id+is_rand|rand|w=7d|a=10)",
+  "rate(is_click|follow_user_num_range+tab|all|w=1d|a=10)",
+  "rate(is_click|user_id|all|w=1d|a=10)",
+  "sum(long_view|music_id+is_rand|rand|w=inf)"
+ ],
+ "accepted_specs": [
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "upload_type"
+   ],
+   "filt": "all",
+   "window": 86400.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "is_click",
+   "key": [
+    "music_id"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 100.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "user_id",
+    "upload_type"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "long_view",
+   "key": [
+    "follow_user_num_range",
+    "author_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_like",
+   "key": [
+    "user_active_degree",
+    "video_id"
+   ],
+   "filt": "clicked",
+   "window": 604800.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "dur_bucket"
+   ],
+   "filt": "rand",
+   "window": 3600.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 100.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "is_lowactive_period",
+    "video_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "user_id",
+    "upload_type"
+   ],
+   "filt": "std",
+   "window": 604800.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "register_days_range",
+    "music_id"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "user_id"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "std",
+   "window": Infinity,
+   "alpha": 100.0
+  },
+  {
+   "agg": "sum",
+   "signal": "imp",
+   "key": [
+    "user_id"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "author_id",
+    "is_rand"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "user_id",
+    "tag"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "is_lowactive_period",
+    "video_id"
+   ],
+   "filt": "rand",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "play_s",
+   "key": [
+    "user_id",
+    "upload_type"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "imp",
+   "key": [
+    "user_id",
+    "music_type"
+   ],
+   "filt": "rand",
+   "window": 3600.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "play_s",
+   "key": [
+    "user_id",
+    "music_type"
+   ],
+   "filt": "all",
+   "window": 3600.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "std",
+   "window": Infinity,
+   "alpha": 100.0
+  },
+  {
+   "agg": "rate",
+   "signal": "long_view",
+   "key": [
+    "is_video_author",
+    "author_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "register_days_range",
+    "author_id"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "is_rand"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 100.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "video_id",
+    "hour"
+   ],
+   "filt": "std",
+   "window": 604800.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "music_type"
+   ],
+   "filt": "all",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "is_click",
+   "key": [
+    "follow_user_num_range",
+    "hour"
+   ],
+   "filt": "all",
+   "window": 3600.0,
+   "alpha": 100.0
+  },
+  {
+   "agg": "sum",
+   "signal": "is_click",
+   "key": [
+    "follow_user_num_range",
+    "music_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "author_id",
+    "is_rand"
+   ],
+   "filt": "rand",
+   "window": 604800.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "follow_user_num_range",
+    "tab"
+   ],
+   "filt": "all",
+   "window": 86400.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "all",
+   "window": 86400.0,
+   "alpha": 10.0
+  },
+  {
+   "agg": "sum",
+   "signal": "long_view",
+   "key": [
+    "music_id",
+    "is_rand"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 10.0
+  }
+ ],
+ "history": [
+  {
+   "name": "rate(is_hate|upload_type|all|w=inf|a=10)",
+   "gain": -0.0003100090969899161,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|upload_type|all|w=inf|a=10)",
+   "gain": -0.0002049795888589001,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range|all|w=1d|a=10)",
+   "gain": -0.0003029300288469039,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+dur_bucket+tab|all|w=7d|a=10)",
+   "gain": -0.00015011854197088947,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|is_video_author+video_id|std|w=1d)",
+   "gain": 8.78182645804304e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|register_days_range+music_id|std|w=1h)",
+   "gain": -6.703727789897362e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|author_id+is_rand|all)",
+   "gain": 0.000701671870337206,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|register_days_range+music_type|all|w=7d)",
+   "gain": -0.00032640096369007665,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_follow|upload_type+hour|all|w=inf)",
+   "gain": -0.0001646585392350297,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_video_author+music_type|all|w=1d)",
+   "gain": -0.00033075085671763205,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+hour|std|w=1d)",
+   "gain": -3.329496668758036e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|music_type|all|w=inf)",
+   "gain": -0.005389053592791071,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|all|w=7d)",
+   "gain": 0.0015563820338872492,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range|std|w=inf|a=10)",
+   "gain": -0.0017199085037265527,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|is_video_author+video_id|all|w=inf|a=10)",
+   "gain": 0.0008866834184277916,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|is_video_author|all|w=1d)",
+   "gain": -0.0019273115194503587,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+upload_type|all|w=1h)",
+   "gain": -8.631907728351429e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|fans_user_num_range+author_id|all|w=1h|a=10)",
+   "gain": -9.171049692480171e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+dur_bucket|rand|w=1h|a=10)",
+   "gain": 0.0006531170943782638,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_forward|register_days_range+music_id|all)",
+   "gain": -2.8478363279793584e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range+music_id|all|w=inf)",
+   "gain": 0.0009018953134284358,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_active_degree|all|w=inf)",
+   "gain": -0.0008665469368193124,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|follow_user_num_range+music_id|all)",
+   "gain": -0.00015656545819497936,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|upload_type+is_rand|std|w=7d)",
+   "gain": -0.0003024910722201901,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|is_video_author+music_id|rand)",
+   "gain": -0.00022652820281354735,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+author_id|all|w=1h|a=10)",
+   "gain": 2.2141086422622358e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_follow|follow_user_num_range+video_id|all)",
+   "gain": -3.418172236790973e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+tag|all|w=7d)",
+   "gain": 7.730390687576971e-06,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|tag|all|w=7d)",
+   "gain": -9.281018266005248e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|music_id|all|w=7d)",
+   "gain": 0.002840184476507357,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+video_id|std|w=1h)",
+   "gain": 1.2121882064730638e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|follow_user_num_range|all|w=1d|a=1)",
+   "gain": -0.00032745291476615757,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+dur_bucket|all|w=7d)",
+   "gain": -0.00017777103070915068,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id+music_type+hour|all|w=inf)",
+   "gain": 0.0003434556096069685,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|user_id+upload_type|clicked|w=1h|a=10)",
+   "gain": -2.830428683064934e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|std|w=7d)",
+   "gain": 0.0012491609541063764,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|music_id|clicked|w=1d)",
+   "gain": -6.037333777852982e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|music_id|all|w=inf|a=10)",
+   "gain": 0.0003089185512555881,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|user_active_degree+music_type|clicked)",
+   "gain": -0.0001194430160170179,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+video_type|all|w=7d)",
+   "gain": -0.00013276497626635297,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|follow_user_num_range|all)",
+   "gain": -7.528063149370157e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_id|std|w=1h)",
+   "gain": 1.9042084667908465e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_id+music_id|all|w=inf)",
+   "gain": -2.566880126814164e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|upload_type+tab|std|w=1d)",
+   "gain": -9.464155000526997e-06,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+tag|all|w=7d|a=10)",
+   "gain": 4.2686165263372544e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_forward|fans_user_num_range+music_id|all|w=1d|a=10)",
+   "gain": -8.007125241560331e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|video_id|rand)",
+   "gain": 0.0007742031118159742,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|all|w=1d)",
+   "gain": -1.120916386704307e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+dur_bucket|clicked|w=1h|a=10)",
+   "gain": -3.272624844119498e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|user_id+hour|all|w=7d|a=10)",
+   "gain": 0.0002855537373996908,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|video_id|all)",
+   "gain": 0.0011989430134501933,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|fans_user_num_range+music_id|rand|w=1d|a=10)",
+   "gain": -3.3920699088474393e-07,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|follow_user_num_range+music_type+is_rand|all|w=1h|a=10)",
+   "gain": -0.00014944323683624416,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+author_id|clicked|w=1d|a=1)",
+   "gain": 0.0005327893799885186,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|upload_type|clicked)",
+   "gain": -8.575179804615196e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|user_active_degree+tag|rand|w=1d)",
+   "gain": -0.00012222332774441957,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range+video_type|all|w=1h|a=10)",
+   "gain": -8.020140962677891e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_active_degree+video_id|clicked|w=7d|a=1)",
+   "gain": 0.0007082263617703144,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|upload_type|std|w=7d)",
+   "gain": 5.1486035030634536e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|fans_user_num_range+music_type+hour|all)",
+   "gain": 0.00014328799673191117,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|user_active_degree+video_type|std|w=1d)",
+   "gain": -0.00022210763878671713,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_active_degree+tag|all|w=1h)",
+   "gain": -0.0002621846641824299,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|dur_bucket+hour|clicked|w=inf|a=100)",
+   "gain": 5.47757050606279e-07,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_video_author+dur_bucket|all|w=1h)",
+   "gain": -0.00028472778950000555,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|follow_user_num_range|all|w=7d|a=10)",
+   "gain": -0.00020265509942080095,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_comment|fans_user_num_range|std|w=inf|a=100)",
+   "gain": -0.0006003620584262293,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|register_days_range+music_type|all|w=1d)",
+   "gain": -0.00015720086461074034,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|tag|all|w=7d)",
+   "gain": -0.0001768123803390642,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range+music_id|std|w=1d|a=100)",
+   "gain": 0.0005893987583896476,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=inf|a=10)",
+   "gain": 0.001761929884155411,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|fans_user_num_range+tag|all|w=inf|a=10)",
+   "gain": -6.366161273629878e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|tag|all)",
+   "gain": -6.957493298770379e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|register_days_range+dur_bucket+tab|std|w=7d)",
+   "gain": -5.6725517500855194e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|is_lowactive_period+author_id|all)",
+   "gain": 0.0003861712895035785,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|register_days_range+upload_type|all|w=inf)",
+   "gain": -0.0019816891901033307,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range|all|w=1h)",
+   "gain": -0.00024378910755518124,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|register_days_range+video_type|all|w=1d)",
+   "gain": -9.611549524546348e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+author_id+hour|all|w=7d|a=10)",
+   "gain": 9.617821755247835e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+music_type|clicked|w=1h|a=100)",
+   "gain": -4.308717521167571e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|fans_user_num_range+music_type|all|w=1d|a=100)",
+   "gain": -0.00018414374746972273,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_active_degree|all|w=1d|a=10)",
+   "gain": 0.00011872144594998746,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_lowactive_period+author_id+tab|all|w=1h)",
+   "gain": -8.463849965889558e-07,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|follow_user_num_range+dur_bucket|clicked)",
+   "gain": -8.45243458787448e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|is_video_author|all)",
+   "gain": -0.00026824095343847,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+tab|std|w=1h|a=10)",
+   "gain": -2.579534372837422e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|tag+tab|all|w=7d|a=10)",
+   "gain": -0.00017705124744132883,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=1d|a=10)",
+   "gain": 0.003327835292371184,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range|rand|w=1d|a=10)",
+   "gain": -0.0003031972846810893,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|music_type+hour|all|w=7d)",
+   "gain": -0.00013457069918432207,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|register_days_range+video_type+is_rand|all|w=7d)",
+   "gain": -9.321233262826745e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+author_id|std|w=7d|a=10)",
+   "gain": -0.0007527573952804678,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author+music_id|std|w=inf|a=100)",
+   "gain": 0.0005074382720607895,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree|clicked|w=inf)",
+   "gain": -0.0008140345838393848,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author+dur_bucket|all|w=1d|a=1)",
+   "gain": -6.266254592529608e-05,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_follow|music_type+is_rand|std|w=inf)",
+   "gain": -0.0004302750530588706,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|upload_type+is_rand|all|w=7d)",
+   "gain": -0.0001468432095028116,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|upload_type|all|w=1d|a=10)",
+   "gain": -0.0004402842984567723,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(play_ratio|video_type|rand)",
+   "gain": -0.0001615768655477967,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|music_id|clicked)",
+   "gain": 0.000645357235898758,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_active_degree+video_id+tab|all|w=inf|a=100)",
+   "gain": 0.00037254515127910226,
+   "round": 0,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|user_active_degree+tag|clicked)",
+   "gain": -0.00012434066459865445,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|is_lowactive_period+author_id+tab|all|w=inf)",
+   "gain": 3.017586703257802e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+dur_bucket|rand|w=inf)",
+   "gain": -0.0019065966337116769,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|register_days_range+tag|all|w=1h|a=10)",
+   "gain": -0.00019629850969071772,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|user_active_degree+video_id|rand|w=inf)",
+   "gain": 8.175651812547535e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+music_id|all|w=inf)",
+   "gain": 0.0003392704056369156,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|user_active_degree+author_id|std)",
+   "gain": 1.0615200267349856e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range+music_type|rand|w=1h)",
+   "gain": -5.4238494694547335e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id|rand|w=inf|a=100)",
+   "gain": 0.005613310341011535,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|upload_type+is_rand|all|w=1h|a=10)",
+   "gain": -8.734413400879326e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+video_id|all|w=inf|a=10)",
+   "gain": 0.000947717212207877,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_id|all|w=1d)",
+   "gain": 0.00015554458164313,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+upload_type|all|w=1h|a=10)",
+   "gain": -0.00017954541743991914,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range+dur_bucket+hour|rand|w=inf)",
+   "gain": -0.00010629454279414974,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|is_lowactive_period+dur_bucket|std|w=7d|a=10)",
+   "gain": -7.245581395737277e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|register_days_range+video_type+is_rand|rand|w=inf)",
+   "gain": -0.0006799521005725895,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|music_type+is_rand|all|w=1d)",
+   "gain": -0.0019403457508693767,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|video_id+tab|all|w=7d)",
+   "gain": 0.0003104488525167981,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_video_author+video_type+hour|clicked|w=7d)",
+   "gain": -0.00015191802908215424,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+music_type|all|w=1h|a=100)",
+   "gain": -0.00014261517196340057,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_lowactive_period|all|w=7d|a=10)",
+   "gain": -0.001724976210833229,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|dur_bucket+is_rand|rand|w=inf|a=10)",
+   "gain": 2.7222484432765093e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range+video_type|all|w=1h)",
+   "gain": -0.00018118545807932485,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|fans_user_num_range|clicked|w=1d|a=10)",
+   "gain": -0.00046540667235200894,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+upload_type+hour|all|w=1d|a=10)",
+   "gain": -0.000107191304234866,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+is_rand|all|w=1d|a=10)",
+   "gain": 6.675632915392749e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|std|w=1d|a=10)",
+   "gain": -0.0033400621951538145,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+music_id|all|w=1d|a=10)",
+   "gain": 9.610338517657135e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_follow|user_id+upload_type+is_rand|clicked|w=7d)",
+   "gain": -7.243460689254633e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|fans_user_num_range+upload_type|rand|w=1h|a=10)",
+   "gain": -7.523042233431587e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|video_id|std|w=1h)",
+   "gain": -1.0753857009881962e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|is_video_author+video_id+tab|rand)",
+   "gain": -7.44176288908216e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|is_video_author+video_id|clicked|w=1h|a=1)",
+   "gain": -6.303564213427926e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+music_type|clicked|w=1h|a=10)",
+   "gain": -0.0001988856120854754,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|upload_type|rand|w=1d|a=10)",
+   "gain": -0.0002833514424479544,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|is_video_author|all)",
+   "gain": -0.00018708231969777334,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|user_id+author_id|all|w=1h)",
+   "gain": 0.0,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period|clicked|w=1h)",
+   "gain": -0.000750583686710049,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+music_type|all|w=inf|a=10)",
+   "gain": -0.003486615092472778,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|dur_bucket+tab|all|w=1h|a=100)",
+   "gain": -0.0001187557073792922,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period|all|w=inf)",
+   "gain": -0.008041515739029725,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|tag+tab|clicked)",
+   "gain": -0.0001077293200342222,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|dur_bucket|clicked|w=inf|a=100)",
+   "gain": 1.691707736162229e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+video_type|all|w=1d|a=10)",
+   "gain": -0.00045095359290098225,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+music_type|std|w=1d)",
+   "gain": -0.0002885082768259162,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|follow_user_num_range+dur_bucket|all|w=7d)",
+   "gain": -0.00010287944428560847,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_video_author+author_id+hour|all|w=1h)",
+   "gain": -0.00021860415055607874,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+music_type|all|w=inf|a=10)",
+   "gain": -0.003347888868853899,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|is_video_author+music_type|all|w=1d)",
+   "gain": -0.00029350282978996,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_lowactive_period+music_type+hour|all|w=1h)",
+   "gain": 3.143646166020586e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|follow_user_num_range+hour|clicked)",
+   "gain": -4.061556762691154e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|fans_user_num_range+video_id|clicked|w=1d|a=1)",
+   "gain": -0.0001305333396810493,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+music_id|rand|w=1d|a=10)",
+   "gain": 0.000140959003738228,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|dur_bucket+is_rand|clicked|w=1d)",
+   "gain": -0.0001834635251973804,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_lowactive_period|std|w=1d)",
+   "gain": -0.00030256924023253084,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|author_id+tab|all|w=1h)",
+   "gain": 8.12749984618888e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_video_author+music_id|all|w=inf)",
+   "gain": 7.047671460147509e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|user_active_degree+music_type|clicked|w=inf|a=100)",
+   "gain": -0.0002533164840938795,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_id+video_id|clicked|w=1d|a=10)",
+   "gain": -0.001320914238336246,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+hour|std|w=7d|a=100)",
+   "gain": -0.00019537555524540284,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|dur_bucket|all|w=1h)",
+   "gain": -7.116621081471042e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|music_id+hour|clicked|w=7d|a=10)",
+   "gain": -9.982004336051009e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range+hour|all|w=1d|a=10)",
+   "gain": -6.070693608234423e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+music_id|rand|w=inf|a=1)",
+   "gain": 0.0007215359082565209,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|register_days_range+video_type|rand|w=1d)",
+   "gain": -0.003295331093144782,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_profile_enter|user_active_degree+tag|all)",
+   "gain": -8.700813324119538e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|music_type+is_rand|clicked|w=1d|a=10)",
+   "gain": -3.40743745645411e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|music_type|all|w=inf|a=1)",
+   "gain": -0.001959005331370167,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|user_active_degree+tag|all)",
+   "gain": -0.00010921824450182971,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|follow_user_num_range+music_id|all|w=7d|a=1)",
+   "gain": 3.9602381896763905e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|register_days_range+tag|std|w=1d)",
+   "gain": -0.0006656596504623358,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|follow_user_num_range+is_rand|clicked|w=inf)",
+   "gain": -0.00035389141194175355,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|is_video_author|std)",
+   "gain": -0.0001516179797527717,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+music_type|std|w=1h|a=1)",
+   "gain": -0.0042609094157827765,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_forward|follow_user_num_range+upload_type+is_rand|all|w=1h)",
+   "gain": -1.723458529540034e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_lowactive_period|all|w=inf)",
+   "gain": -0.008133888779839282,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range+music_type|all|w=inf)",
+   "gain": -0.0008047612342049759,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|follow_user_num_range|all)",
+   "gain": -8.789593701380438e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+video_id|all|w=1h|a=1)",
+   "gain": -0.0010417652429221547,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range|all|w=inf|a=10)",
+   "gain": -0.00038977567315412465,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|follow_user_num_range+video_id|all|w=1d)",
+   "gain": -1.5994204264013767e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_lowactive_period+dur_bucket|clicked|w=inf)",
+   "gain": -0.0013548883333735495,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|register_days_range|all|w=7d|a=10)",
+   "gain": -0.00011817900385763247,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range+author_id|clicked|w=1d)",
+   "gain": 1.350885073286845e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|user_active_degree+tag|all|w=1d)",
+   "gain": -2.9892281062315895e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|author_id|all|w=inf)",
+   "gain": 1.53510429599657e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|register_days_range+video_type|rand|w=1h)",
+   "gain": -0.00044895640031417106,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range+tab|all|w=1h|a=100)",
+   "gain": -0.0001596471597788418,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_id+author_id|std|w=1d)",
+   "gain": 0.0,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|register_days_range|std|w=7d)",
+   "gain": -0.00014565213872236304,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|is_lowactive_period+music_id|all|w=7d|a=10)",
+   "gain": -9.235935738949319e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|is_lowactive_period+tag+tab|std)",
+   "gain": -7.116380832511426e-05,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|follow_user_num_range+video_id|clicked|w=1d)",
+   "gain": -5.155938552159345e-06,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_video_author+video_type|all|w=7d)",
+   "gain": -0.006754851525883232,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_forward|fans_user_num_range+music_type+hour|std)",
+   "gain": -0.00012986449316249038,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_id+tag|all|w=1h|a=1)",
+   "gain": -0.002135494137541105,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range|std|w=7d)",
+   "gain": -0.0008396320840964311,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|tag|rand|w=1h)",
+   "gain": -0.00012311955281951725,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|dur_bucket|std|w=7d)",
+   "gain": -0.0005161375077057384,
+   "round": 1,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|std|w=inf)",
+   "gain": 6.664591589200519e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id|all|w=7d)",
+   "gain": 0.0006018655440337417,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range+video_id|std|w=7d)",
+   "gain": -0.00021368308979674566,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|music_id|std|w=1d)",
+   "gain": -0.0003923743936464774,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|user_active_degree+video_id+tab|std|w=inf|a=100)",
+   "gain": -0.00018125768006915788,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|video_type|all|w=7d)",
+   "gain": -0.006869682527730903,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|user_id+upload_type|all)",
+   "gain": -0.0003640485933049109,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=1h|a=10)",
+   "gain": -0.00017488541580945594,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=1d|a=100)",
+   "gain": -0.0002445274168645928,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id|all|w=1h)",
+   "gain": -2.75195088328406e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id+tab|std|w=7d)",
+   "gain": -0.0001464788432107289,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_video_author+video_id|std|w=7d)",
+   "gain": -9.385869780975664e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id|std|w=7d)",
+   "gain": -2.891834002033411e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|dur_bucket|clicked|w=1d)",
+   "gain": -0.00035229029123806654,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=inf|a=1)",
+   "gain": 5.519052526126167e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_like|user_active_degree+video_id+hour|clicked|w=7d|a=1)",
+   "gain": -1.532881021393262e-06,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|rand|w=7d)",
+   "gain": -2.7060860799732467e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_profile_enter|user_id+upload_type|all|w=1d)",
+   "gain": -6.0744087753694664e-06,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|user_id+upload_type|all|w=7d)",
+   "gain": 1.3411056950518585e-06,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|user_id+author_id|all|w=inf|a=10)",
+   "gain": -0.0018011394651298862,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=7d|a=10)",
+   "gain": 0.001398876708051,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|music_id|all|w=7d)",
+   "gain": -0.00010901279744052195,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|music_id+is_video_author|clicked|w=1d)",
+   "gain": -9.247410576029846e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+music_id|all|w=inf)",
+   "gain": -6.147623503527377e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id+is_rand|std|w=7d)",
+   "gain": -4.781076378235216e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|video_id|all|w=1h|a=10)",
+   "gain": -0.00046884193204843605,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|music_id|clicked|w=1h)",
+   "gain": 1.5063123168179704e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+upload_type|all|w=1d|a=10)",
+   "gain": -0.0002495414529615214,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|music_id|all|w=7d)",
+   "gain": 0.00016848464760998993,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_follow|is_video_author+video_id|clicked|w=inf|a=10)",
+   "gain": 0.00033989104955522986,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(play_s|follow_user_num_range+music_id|all|w=inf)",
+   "gain": -0.0001331845025673295,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+dur_bucket|all|w=1d)",
+   "gain": 2.765643064511769e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|music_id|std|w=inf|a=100)",
+   "gain": -3.4432530114369975e-06,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|user_id+upload_type|all|w=1d)",
+   "gain": -6.662875757895703e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+is_video_author|all|w=7d)",
+   "gain": 6.08083445837182e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_follow|music_id|all|w=7d)",
+   "gain": -2.55442672262296e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id+hour|all|w=inf|a=10)",
+   "gain": -0.00012622883105684046,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|clicked|w=7d)",
+   "gain": -1.1375854976458655e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|rand|w=1d|a=10)",
+   "gain": 3.850912675384954e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|all|w=inf)",
+   "gain": 1.5346097633373024e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type|std|w=7d)",
+   "gain": 0.00034833679792722894,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+upload_type|all|w=1d)",
+   "gain": -0.0006138487356179279,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+author_id|all|w=1d|a=10)",
+   "gain": -0.014735601492923411,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_like|music_id+is_rand|clicked)",
+   "gain": -1.3956943701876057e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+dur_bucket|rand|w=1h|a=1)",
+   "gain": -0.00017770660170313146,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+user_id|all|w=7d)",
+   "gain": 6.189416190910402e-05,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|music_id|clicked|w=7d)",
+   "gain": 0.0002394281603512738,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_profile_enter|music_id|clicked|w=1d)",
+   "gain": -0.0001275224464687974,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+upload_type|all|w=7d)",
+   "gain": -0.00015261211164901978,
+   "round": 1,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|register_days_range+video_id|all|w=1d)",
+   "gain": -0.0002291023030287498,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+video_id|rand|w=7d)",
+   "gain": 0.0007348877380671803,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_video_author+music_type|all|w=7d)",
+   "gain": -5.856631317224803e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|user_active_degree+upload_type|all|w=inf|a=100)",
+   "gain": -0.0007095142935296117,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|follow_user_num_range+tag|std|w=inf|a=100)",
+   "gain": 2.2331772799089045e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+music_id+is_rand|all|w=inf|a=10)",
+   "gain": -0.00229578583203105,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|video_type|std|w=inf|a=10)",
+   "gain": -0.004019810353567632,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|register_days_range+author_id|all)",
+   "gain": -0.00015233149226950848,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|dur_bucket|all)",
+   "gain": -0.00011675576890768369,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|user_id+video_type|all)",
+   "gain": 0.0002123003203630125,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|follow_user_num_range+music_id|clicked|w=1h)",
+   "gain": -8.615525136140834e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+video_type|std|w=inf)",
+   "gain": -0.0007311423008937168,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_forward|user_id|all|w=inf|a=10)",
+   "gain": 0.0012908838551322077,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+music_id+tab|clicked|w=1h|a=100)",
+   "gain": -0.00038128967794381907,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|video_id|all|w=1d|a=100)",
+   "gain": -0.0003652082649573951,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+dur_bucket+tab|rand|w=inf|a=10)",
+   "gain": -0.000142357604052179,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|register_days_range+hour|all|w=7d)",
+   "gain": -0.00018093118149620224,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_profile_enter|fans_user_num_range+tag|rand)",
+   "gain": -0.00015888704802441422,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range+upload_type|std|w=inf)",
+   "gain": -0.0003118662511297776,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range+video_type|all|w=inf|a=100)",
+   "gain": 3.230398689546554e-06,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|user_id+upload_type|std|w=inf)",
+   "gain": 2.469514979425158e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_id+tag|all|w=inf)",
+   "gain": 0.0005143142789947874,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|user_id+music_id|std)",
+   "gain": -8.198250667612594e-06,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_active_degree+tab|all|w=1h|a=1)",
+   "gain": -0.00022414714087948262,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+dur_bucket|all|w=1d|a=10)",
+   "gain": -0.00010158837414075972,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_id+tag|all|w=1d|a=100)",
+   "gain": -0.005831180633209476,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|register_days_range+author_id|all|w=7d)",
+   "gain": 0.00013768902865735066,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+author_id|rand|w=1d)",
+   "gain": 2.5508783541017266e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_follow|register_days_range+video_type|all)",
+   "gain": -0.00013642144688558178,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+music_type|std|w=1d)",
+   "gain": -0.0024592061978140345,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|is_video_author+video_id|rand)",
+   "gain": 5.6864863188677006e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|register_days_range+music_type|std|w=1d)",
+   "gain": -0.00016589338779454676,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+music_id|std|w=1h|a=10)",
+   "gain": -0.00030111353791661966,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|user_id+tab|all|w=1h)",
+   "gain": 0.0,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|user_id|all|w=7d)",
+   "gain": 0.0005716073886455897,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+upload_type|rand|w=inf)",
+   "gain": -0.0037548188612779865,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+video_type|all|w=1d|a=100)",
+   "gain": -0.00024804623603208453,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|video_id|all|w=1h)",
+   "gain": -0.00024229544181370022,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_comment|music_type|all|w=1d|a=100)",
+   "gain": -0.00013460084092103974,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_lowactive_period+music_type|std|w=inf)",
+   "gain": -0.006045337233831716,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+music_type|all|w=1d|a=1)",
+   "gain": 1.293503449611988e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+video_id|all|w=inf)",
+   "gain": -6.843211971574448e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|fans_user_num_range+music_id|rand|w=7d)",
+   "gain": -2.649041656144213e-06,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+tag|rand|w=inf|a=100)",
+   "gain": 3.627658209987006e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range+video_type|all|w=7d)",
+   "gain": -0.0007757418394304105,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|follow_user_num_range+music_id|std)",
+   "gain": -8.93132609987024e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|dur_bucket|all|w=7d)",
+   "gain": -0.0001002436327101619,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_video_author+video_id+hour|all|w=1d|a=10)",
+   "gain": -0.0010352518756098772,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|music_id|all|w=7d|a=10)",
+   "gain": -9.720814455754789e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+music_id|rand|w=1h|a=100)",
+   "gain": -1.6333693879655442e-06,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|follow_user_num_range|all|w=7d)",
+   "gain": -0.00017643271631706536,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|fans_user_num_range|all)",
+   "gain": -0.00010733458522083072,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|dur_bucket|all|w=inf)",
+   "gain": -0.000536374702917064,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|follow_user_num_range+video_id|all)",
+   "gain": 2.317436185989008e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id|all|w=7d)",
+   "gain": 0.0018687407790264898,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_video_author|all|w=inf)",
+   "gain": -0.006764659684480867,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|user_active_degree+upload_type|clicked)",
+   "gain": -8.804947220597548e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|follow_user_num_range+music_type|all|w=1h|a=1)",
+   "gain": -0.00015652390085285628,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree|all|w=1h|a=100)",
+   "gain": -0.00015865291060651598,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|register_days_range+hour|rand|w=inf)",
+   "gain": -0.000225860839551284,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id+music_type|rand|w=1h)",
+   "gain": 0.0006194838994391105,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range+music_type|std|w=7d)",
+   "gain": -0.00017229800032914078,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+music_type+hour|all|w=inf|a=10)",
+   "gain": -0.0001668829290518148,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|tag|all)",
+   "gain": -7.361639638003847e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+dur_bucket|all|w=inf)",
+   "gain": -0.00048351898503778967,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_lowactive_period+music_type|std|w=inf|a=10)",
+   "gain": -0.0011928811060071265,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|follow_user_num_range|all|w=7d)",
+   "gain": -0.00014259979833775027,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+author_id|rand|w=1h|a=10)",
+   "gain": -0.00030076883583912695,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range+author_id|all|w=1h)",
+   "gain": -0.00012412107089204705,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_video_author+tag|all|w=inf|a=10)",
+   "gain": -0.00012674659060940563,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_lowactive_period+hour|clicked|w=7d|a=10)",
+   "gain": -0.0005492584438839265,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|is_lowactive_period+video_id|clicked)",
+   "gain": 0.00014463308323825474,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|tag+hour|rand|w=1h)",
+   "gain": -0.0005300272318283783,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|register_days_range+upload_type+hour|all|w=inf)",
+   "gain": -0.00021130749333436727,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|fans_user_num_range+dur_bucket|all)",
+   "gain": -8.374722015253022e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|register_days_range+tab|all|w=1h|a=10)",
+   "gain": -6.694786513788964e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_id+tag+hour|all|w=1h)",
+   "gain": 2.065333078227205e-06,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|dur_bucket|std|w=1h|a=10)",
+   "gain": -9.829823703044749e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|is_video_author+music_type|all)",
+   "gain": -0.00014423607308755582,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|register_days_range+hour|std|w=inf)",
+   "gain": -4.955613959894967e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|video_type|all|w=1h|a=10)",
+   "gain": -8.130951538054543e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree|std|w=inf|a=100)",
+   "gain": -0.0014816883644374057,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|fans_user_num_range+music_type|all)",
+   "gain": -8.124551779797873e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_lowactive_period+tag|all|w=7d|a=10)",
+   "gain": -0.00016822126640181345,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range|all|w=1h|a=1)",
+   "gain": -0.00012167539251295434,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|author_id+hour|clicked|w=7d|a=10)",
+   "gain": -4.42208487483331e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|video_type|all|w=7d)",
+   "gain": -0.011382709925927603,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_video_author+author_id|all|w=7d)",
+   "gain": -3.7484637903262286e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range+video_type|all|w=7d|a=1)",
+   "gain": -0.00039358118373333806,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|fans_user_num_range+video_id|clicked)",
+   "gain": 7.995620007844595e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|music_id+tab|all|w=1h|a=10)",
+   "gain": -0.0004335165875314906,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|music_type+tab|all|w=1d)",
+   "gain": -0.00012388740785523877,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_comment|dur_bucket+hour|rand|w=inf|a=100)",
+   "gain": -7.364441692719881e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range|all|w=1d|a=100)",
+   "gain": -0.0008725582155530986,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|video_id|all)",
+   "gain": -0.00010280616583202562,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_forward|video_type|std|w=7d|a=10)",
+   "gain": -8.101505959179356e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|register_days_range|rand|w=7d|a=100)",
+   "gain": -7.683835612254386e-05,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=7d|a=100)",
+   "gain": 0.00013771701659409663,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range+author_id+is_rand|rand|w=1d)",
+   "gain": -0.0001052819504360758,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+author_id+is_rand|all|w=1d|a=10)",
+   "gain": 0.0003471020656192758,
+   "round": 2,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_active_degree+video_id|all|w=7d|a=1)",
+   "gain": -0.0001473329968118553,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+user_active_degree|all|w=7d)",
+   "gain": 0.00012784507816815394,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(long_view|video_id+is_rand|rand)",
+   "gain": -6.376733085755593e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range|rand|w=inf|a=100)",
+   "gain": -6.191786262949028e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|user_id|rand|w=inf)",
+   "gain": 6.489706528428618e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|author_id+is_rand|all|w=7d|a=10)",
+   "gain": 0.0011183124672460298,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|std|w=inf|a=100)",
+   "gain": 0.0031128731076928706,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id|all|w=inf)",
+   "gain": 0.00018461968287530883,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|is_video_author+video_id|all|w=inf|a=10)",
+   "gain": -8.30144476842154e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|is_video_author+author_id|all|w=inf|a=10)",
+   "gain": 0.00017459017265258892,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(long_view|video_id|all)",
+   "gain": -0.00010863995489684974,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+tab|all|w=1d|a=10)",
+   "gain": -0.00032139459447860785,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|rand|w=inf|a=10)",
+   "gain": 0.0001448143428133264,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=1d|a=10)",
+   "gain": -0.00010797469469286947,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=1d|a=1)",
+   "gain": -0.0001679197625794604,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|register_days_range+music_id|rand|w=7d|a=1)",
+   "gain": 0.00021172147876247216,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_type|all|w=7d)",
+   "gain": -0.00995348720436906,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+video_id|all|w=7d|a=10)",
+   "gain": 0.0006709129477620035,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_like|user_id|rand|w=inf|a=100)",
+   "gain": -0.00010048656063960104,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|user_id+upload_type|all|w=7d|a=1)",
+   "gain": 1.2712907869472101e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=inf|a=100)",
+   "gain": 2.946006360415865e-06,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_video_author|rand|w=inf|a=100)",
+   "gain": -0.0011901007206508996,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|video_id|clicked|w=1d)",
+   "gain": 3.776530627530583e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+tag|all|w=1d|a=10)",
+   "gain": -0.0003337582850329035,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type+tab|all|w=7d)",
+   "gain": 0.00011398198663536974,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+author_id|rand|w=inf|a=100)",
+   "gain": -0.000548617878325719,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+tab|rand|w=inf|a=100)",
+   "gain": 0.00041955208290028745,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|author_id|all|w=7d)",
+   "gain": 0.00026190812867438185,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|register_days_range+video_id|all|w=inf|a=10)",
+   "gain": 0.0002833903922075942,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|register_days_range+music_id|rand|w=inf|a=1)",
+   "gain": 0.00013844070297935884,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id|all|w=1d)",
+   "gain": 0.00011265156823642153,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+video_id|all|w=inf|a=100)",
+   "gain": 0.00027114449160825504,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_type|rand|w=inf|a=100)",
+   "gain": 0.0005777466229191508,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|user_id+upload_type|all|w=7d|a=10)",
+   "gain": 0.0010336278039900226,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+tab|all|w=7d)",
+   "gain": 9.88759530756167e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id+is_rand|all|w=inf|a=10)",
+   "gain": -4.310893210007771e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|register_days_range+music_id|std|w=inf|a=1)",
+   "gain": 1.9695271858133356e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_type|all|w=1d|a=10)",
+   "gain": 8.733854239451055e-05,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_active_degree|rand|w=inf|a=100)",
+   "gain": -6.244045451270219e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+hour|all|w=7d|a=10)",
+   "gain": -0.001085404801606904,
+   "round": 2,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=1h|a=10)",
+   "gain": -0.00047646560170999663,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range+author_id|all|w=1d)",
+   "gain": -0.000158073505537204,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_forward|user_active_degree+tab|all)",
+   "gain": -0.00011593712136281908,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|user_id+tag+tab|all|w=1h)",
+   "gain": 1.376594927871011e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author|clicked|w=1d|a=1)",
+   "gain": -0.0005405551531941222,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|user_active_degree|all|w=1h)",
+   "gain": -0.00020853237826456983,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_profile_enter|fans_user_num_range+author_id+tab|all)",
+   "gain": -0.0001529638396598476,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_video_author+hour|rand|w=inf)",
+   "gain": -0.0006261974686451732,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|user_active_degree+upload_type+is_rand|all|w=inf)",
+   "gain": -0.0001780685332748999,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|video_type+tab|all|w=1h)",
+   "gain": -0.00032164350997548885,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|register_days_range+tag|all)",
+   "gain": -0.00013055728696803603,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+video_type|std|w=7d)",
+   "gain": -0.0005686627172967196,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|user_active_degree+video_type|all|w=7d)",
+   "gain": -0.000967622329874962,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+dur_bucket|all|w=1d)",
+   "gain": -0.0003498577659869495,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+video_id|all|w=1d)",
+   "gain": 1.2917656167177327e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|upload_type+tab|std|w=7d)",
+   "gain": -0.00013970429902215864,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|dur_bucket|all|w=1h|a=10)",
+   "gain": -0.0003437293490780591,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_active_degree|all|w=1d|a=10)",
+   "gain": -0.0007252133622683288,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+dur_bucket+is_rand|all|w=7d|a=10)",
+   "gain": 2.8565361399612854e-06,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+author_id|rand|w=inf|a=1)",
+   "gain": 0.00019632600788127563,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_forward|video_type|rand|w=1d)",
+   "gain": -0.00011077145774751607,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|video_type|clicked|w=inf)",
+   "gain": -0.0006675707276017073,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|video_id|all|w=inf)",
+   "gain": 3.944450327741933e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_id+tag+tab|all|w=1h|a=10)",
+   "gain": -0.0012614218195026727,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|is_video_author+music_id+tab|all)",
+   "gain": 9.563691319014467e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|tag|all|w=1h|a=10)",
+   "gain": -0.00011127269157151787,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|music_type|all|w=inf|a=10)",
+   "gain": -0.002170254917687686,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|register_days_range+video_type|all|w=1h)",
+   "gain": -0.0004074677155343487,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_lowactive_period|all|w=7d|a=10)",
+   "gain": -0.0020255453715128935,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|video_type|all|w=7d)",
+   "gain": -0.0003040193262893731,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|fans_user_num_range+tag|all|w=1d)",
+   "gain": -0.00012695616459779124,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id+author_id|all|w=7d)",
+   "gain": -1.3561614282953105e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_video_author+video_id|all|w=1h|a=10)",
+   "gain": -5.631551789786471e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_follow|author_id|clicked)",
+   "gain": -9.222853294998945e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|register_days_range+author_id|all|w=inf)",
+   "gain": 0.00015005645462162764,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|fans_user_num_range+tab|all|w=1h|a=100)",
+   "gain": -3.2213989375973195e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|user_id+tag|rand)",
+   "gain": -6.371685792649906e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|video_type|all|w=inf|a=10)",
+   "gain": -0.0018892643572564483,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_active_degree+music_id|rand|w=7d|a=10)",
+   "gain": -0.0001715927632762182,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|register_days_range+tab|std|w=inf|a=10)",
+   "gain": -5.0366197690165926e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|register_days_range+author_id|clicked|w=1h)",
+   "gain": -0.00013225576723879806,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|tag|std|w=1h)",
+   "gain": -0.00030645733411044374,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_id+tag|std|w=7d|a=10)",
+   "gain": 6.681186408563633e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id|rand|w=7d|a=10)",
+   "gain": 0.00022629743197122298,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|fans_user_num_range|all|w=7d)",
+   "gain": -0.00018016034434603645,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|register_days_range|clicked)",
+   "gain": -9.167472007870492e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|tag|all|w=inf|a=100)",
+   "gain": -0.00021141283781150877,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|tag|all|w=inf|a=1)",
+   "gain": -5.045478762938371e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|fans_user_num_range+is_rand|all|w=1h)",
+   "gain": -3.7732142954716164e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|user_id+tag|all|w=1d|a=100)",
+   "gain": -0.0009193989924205503,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|video_id+hour|std|w=7d|a=1)",
+   "gain": 0.00018675200210965803,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|user_id+tab|clicked)",
+   "gain": -6.594230732664963e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+author_id+is_rand|all|w=7d)",
+   "gain": -3.932782164273174e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_id+upload_type+is_rand|clicked|w=inf|a=1)",
+   "gain": 0.00011426471020220541,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|music_type+tab|std|w=inf)",
+   "gain": -0.0017008883512779072,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|fans_user_num_range+is_rand|all|w=1d|a=100)",
+   "gain": -6.138084186679826e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_active_degree|std|w=inf|a=10)",
+   "gain": -0.0011833415015509163,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|user_active_degree+tag+hour|rand)",
+   "gain": -1.8811500298365758e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|video_id+tab|all|w=1h|a=100)",
+   "gain": -0.0003520483139781705,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|tag|rand|w=1h|a=10)",
+   "gain": -3.160072302427208e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|is_video_author+music_type+is_rand|clicked|w=inf)",
+   "gain": -0.0008216557446318329,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|dur_bucket|clicked|w=7d)",
+   "gain": -9.027684592183283e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|music_type|rand|w=inf|a=10)",
+   "gain": -0.0001797986048350242,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|video_id+is_rand|all|w=inf|a=10)",
+   "gain": -4.520389898354793e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|user_active_degree|all|w=1d)",
+   "gain": -0.00014152608769457675,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|video_id|all|w=1h)",
+   "gain": 2.068319060022361e-06,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|author_id|std|w=1d|a=10)",
+   "gain": -4.414497656041183e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|dur_bucket+hour|all|w=1h)",
+   "gain": -0.0005844887991142134,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|tag|std|w=1h|a=1)",
+   "gain": -9.927779453627883e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|fans_user_num_range+tag|all)",
+   "gain": -9.507854986789965e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_id+author_id|std|w=inf|a=10)",
+   "gain": 7.095892406611126e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|fans_user_num_range+video_id+tab|all|w=1d|a=1)",
+   "gain": -0.00015929919732265985,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|video_id|all|w=inf|a=10)",
+   "gain": 0.00012986638787199078,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree|all|w=7d)",
+   "gain": -0.0006877687275471112,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(play_s|user_id+music_type|all|w=1h)",
+   "gain": 0.0003038093738940706,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|user_active_degree+dur_bucket|std|w=1d)",
+   "gain": -0.00025387733556536674,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id|std|w=1d|a=10)",
+   "gain": -0.0010699917642064682,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+video_type+is_rand|clicked|w=1d|a=10)",
+   "gain": -8.879028234048958e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|user_id+video_type|rand|w=1d)",
+   "gain": -6.03788023453844e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_lowactive_period|std|w=1h)",
+   "gain": 1.8632616534119961e-06,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_id+music_id|rand|w=1h|a=1)",
+   "gain": -0.0007302115665767106,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|register_days_range+music_type|std|w=1d)",
+   "gain": -0.00017864826456304161,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|author_id|clicked|w=7d)",
+   "gain": 0.00013910910270187316,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|register_days_range+music_id|all|w=1h)",
+   "gain": -2.0979906708573637e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|user_active_degree+tag|all|w=7d)",
+   "gain": -7.354637101963934e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|video_type+tab|all|w=1h)",
+   "gain": -2.8257484713689607e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|video_type|clicked|w=7d)",
+   "gain": -0.00034141408056304057,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|dur_bucket+is_rand|all|w=7d)",
+   "gain": 3.743838309422376e-06,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+music_type|std|w=1d|a=1)",
+   "gain": -0.001387804161206485,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_active_degree+music_type|all|w=inf)",
+   "gain": -0.0003969516398951711,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|user_id+author_id+hour|clicked|w=7d|a=1)",
+   "gain": 4.033557587873604e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+dur_bucket|std|w=7d)",
+   "gain": -0.00014996129310690387,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|is_lowactive_period+video_type|std)",
+   "gain": -0.00013939221297837312,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|fans_user_num_range+tag|clicked|w=1h|a=100)",
+   "gain": -9.410337827892024e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id+author_id+tab|all|w=1d)",
+   "gain": -7.192866850469493e-07,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_comment|is_video_author+video_id|clicked|w=7d|a=10)",
+   "gain": 8.734924850017922e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|author_id+hour|clicked|w=1h|a=100)",
+   "gain": -0.00010746581773352082,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|register_days_range+upload_type|all|w=inf|a=10)",
+   "gain": -1.0161644182105078e-05,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id+is_rand|clicked|w=inf|a=10)",
+   "gain": 0.0001444975004805671,
+   "round": 3,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|music_id+is_lowactive_period|all|w=7d)",
+   "gain": 6.090147390525047e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_like|user_id+upload_type|all|w=7d)",
+   "gain": -1.3156289010440858e-06,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_comment|user_id|rand|w=inf|a=100)",
+   "gain": -6.692862285484491e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range|std|w=inf|a=100)",
+   "gain": -4.2827809333456646e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|user_id|std|w=inf)",
+   "gain": 0.0001972071790918295,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id+tab|all|w=inf|a=10)",
+   "gain": -5.978818344809511e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|std|w=inf|a=10)",
+   "gain": -5.339247606550579e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+author_id|all|w=inf)",
+   "gain": 9.942657185108006e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|std|w=1d|a=100)",
+   "gain": -0.0008386366630087072,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|user_id|std)",
+   "gain": -4.787213322099415e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+is_rand|rand|w=inf|a=100)",
+   "gain": 0.0001325169102732171,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+dur_bucket|all|w=1d|a=10)",
+   "gain": -1.0138486244593015e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_id|all|w=1d|a=10)",
+   "gain": -0.006241171535646239,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+dur_bucket|rand|w=inf|a=100)",
+   "gain": -4.3551329709456965e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|rand|w=1d|a=100)",
+   "gain": 9.713772959663025e-06,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_video_author|std|w=inf|a=100)",
+   "gain": -0.0013537954496723459,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|all|w=inf|a=10)",
+   "gain": -0.00016686394275922112,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+music_type|all|w=inf|a=10)",
+   "gain": -7.127564154835175e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_ratio|user_id|rand|w=inf|a=100)",
+   "gain": 3.071699675438744e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|author_id+is_rand|all|w=1h|a=10)",
+   "gain": 7.269369261375669e-06,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+register_days_range|all|w=7d)",
+   "gain": 3.84483412830261e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|all|w=inf|a=100)",
+   "gain": 1.249299912348123e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_like|user_id+video_type|rand|w=inf|a=100)",
+   "gain": -0.0002323523376630554,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|user_id+upload_type|all|w=7d|a=100)",
+   "gain": -5.473325756599756e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+is_rand|std|w=inf|a=100)",
+   "gain": -0.00030518540297613805,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+author_id|all|w=1d)",
+   "gain": 0.0,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+dur_bucket|all|w=inf|a=10)",
+   "gain": -6.723579957246262e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+dur_bucket|all|w=7d)",
+   "gain": -7.904531666025338e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+upload_type|all|w=1d|a=10)",
+   "gain": -0.0004402842984567723,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_s|user_id+upload_type|all|w=1d|a=10)",
+   "gain": -0.0002305986484431588,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|register_days_range|std|w=inf|a=100)",
+   "gain": -0.0014085808864313099,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|author_id+is_rand|all|w=7d|a=100)",
+   "gain": 0.00019940815646068977,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(play_s|user_id+upload_type|all|w=7d)",
+   "gain": -2.7413649642482607e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_ratio|user_id|std|w=inf|a=100)",
+   "gain": -0.00013460493276384877,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_id|std|w=inf|a=100)",
+   "gain": 1.8619738618996795e-05,
+   "round": 3,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|dur_bucket+is_rand|all|w=1d)",
+   "gain": -0.0001597960924507591,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author+music_type+hour|all|w=1h|a=10)",
+   "gain": 0.00011198059092892843,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|user_id+video_type|rand|w=7d)",
+   "gain": 3.576115336106911e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|user_id|all)",
+   "gain": -2.6922568599929697e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_follow|is_lowactive_period+video_id|all)",
+   "gain": -0.00020034628699011625,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range|rand|w=1d|a=10)",
+   "gain": -3.315744204496207e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|follow_user_num_range+music_id|all|w=1d)",
+   "gain": 6.6228707243931595e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|tag|all|w=1d|a=10)",
+   "gain": -3.983411104224732e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|video_id|all|w=1d)",
+   "gain": -0.00010150264195191161,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|follow_user_num_range+music_type|rand|w=1d|a=10)",
+   "gain": -3.0109287650403882e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_video_author|clicked|w=7d)",
+   "gain": -0.0002497766561640469,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|follow_user_num_range+author_id|all)",
+   "gain": -0.00014188382244773035,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_profile_enter|author_id|clicked)",
+   "gain": -0.00023741348754913183,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+music_id|all|w=7d)",
+   "gain": -2.556982751755754e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range+is_rand|std|w=7d)",
+   "gain": -4.6189174242816655e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|dur_bucket|std|w=1h)",
+   "gain": -0.00021513507438736257,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+author_id|std|w=1h)",
+   "gain": -9.660784135001599e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|user_active_degree+music_id|rand|w=1d)",
+   "gain": -2.147451849787707e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|all|w=inf)",
+   "gain": -8.930957023700614e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|dur_bucket|all)",
+   "gain": -0.0001238363985225921,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_video_author+dur_bucket|std|w=7d|a=10)",
+   "gain": -7.010723153333398e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|music_id+hour|rand)",
+   "gain": -0.0001499797075641407,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|fans_user_num_range+music_id|rand)",
+   "gain": -0.00010514171678815964,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|music_id|rand)",
+   "gain": -0.00013308035986231426,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|follow_user_num_range|all)",
+   "gain": -7.761405943218502e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+video_id|clicked|w=7d)",
+   "gain": 5.477157994970838e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|follow_user_num_range+dur_bucket|all|w=1h|a=10)",
+   "gain": -3.8045950450926735e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_profile_enter|register_days_range+video_type|all|w=7d)",
+   "gain": -0.0005699037287605901,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range|rand|w=1h|a=100)",
+   "gain": -0.00014364040107228693,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|video_type+is_rand|all|w=inf)",
+   "gain": -0.00020025553239372273,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|register_days_range+tag+tab|clicked|w=inf)",
+   "gain": -4.395834874509896e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|register_days_range+author_id|all|w=1h)",
+   "gain": -0.00013596307259178264,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+music_type|all|w=1h|a=10)",
+   "gain": -9.49544476420705e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|video_type+tab|all)",
+   "gain": -0.00012168592113803722,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|fans_user_num_range|clicked|w=inf)",
+   "gain": -0.00032127405813914267,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_video_author+dur_bucket|clicked|w=7d)",
+   "gain": -8.192577215121455e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+tag|all|w=1d|a=100)",
+   "gain": -0.00010698575472978256,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|author_id|rand|w=1h)",
+   "gain": 2.2497370881779943e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|video_type|all|w=7d|a=10)",
+   "gain": -0.0015844347610957654,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|music_id+hour|std)",
+   "gain": 5.364355696702017e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|is_video_author+music_id|std)",
+   "gain": -0.00034747061437034876,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|music_id|all)",
+   "gain": -5.369110152053658e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|register_days_range+music_type|rand)",
+   "gain": -0.00012287882375289216,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_forward|user_id|all|w=7d)",
+   "gain": 4.6602082875990547e-07,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|register_days_range+video_id|all)",
+   "gain": -0.00018965045047103501,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|dur_bucket|rand)",
+   "gain": -1.4301745466127613e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|all|w=7d)",
+   "gain": -0.00010860770353021687,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|is_lowactive_period+video_id|all|w=inf)",
+   "gain": -0.00023715741854679617,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+video_type+hour|std|w=1h)",
+   "gain": -0.00031021363443400896,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|video_type|clicked)",
+   "gain": -0.00012397811282832683,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|follow_user_num_range+tag|all)",
+   "gain": -0.00012593149119644043,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|is_lowactive_period+video_type|clicked)",
+   "gain": -0.00012397811282832683,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_like|tag|all|w=1d)",
+   "gain": -0.0003658995822881095,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|dur_bucket|all|w=inf|a=10)",
+   "gain": -0.0005824688069235862,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_profile_enter|register_days_range+tab|std|w=1h|a=1)",
+   "gain": -3.9164020455007e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|user_active_degree+author_id|all|w=inf)",
+   "gain": 6.826807620252673e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+tab|all|w=7d|a=10)",
+   "gain": -0.0013932336177815974,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_lowactive_period+music_type|all|w=inf)",
+   "gain": -0.0031294053378755904,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|video_id|all|w=7d)",
+   "gain": 5.3593093744030984e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+video_type|rand|w=7d|a=100)",
+   "gain": -0.00020447380129717807,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|register_days_range+music_id|all|w=1d|a=100)",
+   "gain": -0.00031200262967245873,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+hour|all|w=1h)",
+   "gain": 0.0002048842467211598,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range+tag|all|w=1d)",
+   "gain": -0.00012385307431639347,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+dur_bucket|all|w=1h)",
+   "gain": -0.0002497948651674631,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|user_active_degree+author_id|all|w=1d|a=10)",
+   "gain": -0.00010006647671795266,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|user_active_degree+author_id|all|w=1h|a=10)",
+   "gain": -0.0013721832271100243,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|video_id+hour|all|w=7d|a=1)",
+   "gain": -0.00010252286772605146,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_video_author+music_type+tab|all|w=1d)",
+   "gain": -0.0005541760703069443,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id+video_type|rand|w=1h|a=100)",
+   "gain": -0.00010573690000698077,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|is_lowactive_period+dur_bucket|rand)",
+   "gain": -0.00017234115299463726,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_lowactive_period+author_id+is_rand|clicked|w=inf)",
+   "gain": 2.0544778015385567e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|author_id|all)",
+   "gain": -8.089142360306889e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|fans_user_num_range+video_type|rand)",
+   "gain": -0.00011971181626307947,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+is_rand|rand|w=inf)",
+   "gain": -0.002037496337420952,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+video_id|all|w=inf)",
+   "gain": 4.524073953843244e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|music_type+is_rand|clicked|w=inf)",
+   "gain": -0.00016177062441086187,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+author_id|all|w=inf)",
+   "gain": -2.330422460339321e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|music_id|all|w=7d)",
+   "gain": 4.509010341496866e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_forward|follow_user_num_range+hour|clicked|w=1d)",
+   "gain": -1.8709689828255716e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|author_id|all)",
+   "gain": -9.332396495337347e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|author_id|all|w=7d)",
+   "gain": -2.425286929430559e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_active_degree|std|w=1d)",
+   "gain": 1.1601945322126106e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|dur_bucket|rand|w=1h|a=10)",
+   "gain": -9.14707771240697e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|music_type|all|w=1h|a=1)",
+   "gain": -0.00018888525191040895,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|fans_user_num_range+music_id+tab|rand|w=1d|a=10)",
+   "gain": -8.251627176103504e-06,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id+video_id|std|w=1h|a=100)",
+   "gain": -0.0013935047208891715,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree|clicked|w=1h|a=1)",
+   "gain": -0.00024365192525510615,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_lowactive_period|clicked|w=1h|a=10)",
+   "gain": -0.00012271718084189143,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_id|all|w=inf)",
+   "gain": -3.278108463339313e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_video_author+video_type+tab|rand|w=1h)",
+   "gain": -0.00011423706430752079,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|music_type+is_rand|all|w=7d|a=1)",
+   "gain": -0.0002286856680258631,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_lowactive_period+music_id|all|w=inf|a=1)",
+   "gain": 5.630877228035569e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|register_days_range+hour|all)",
+   "gain": -3.248748892004105e-05,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_forward|upload_type|all)",
+   "gain": -0.00021096092598826832,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_video_author+upload_type|rand|w=7d)",
+   "gain": -0.000719153272950801,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_active_degree+is_rand|all|w=1h)",
+   "gain": -0.00024344596567427157,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+tag|rand|w=inf)",
+   "gain": -0.00014631579875595824,
+   "round": 4,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_comment|music_id|all|w=7d)",
+   "gain": -2.3633963211977527e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range+upload_type|all|w=1d|a=10)",
+   "gain": -0.00019696665783319744,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|std|w=inf|a=10)",
+   "gain": -0.00016569107657687931,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|all|w=7d|a=10)",
+   "gain": 0.00019072750077575584,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+hour|all|w=1d|a=10)",
+   "gain": -0.00013278343462114206,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(long_view|user_id+upload_type|all)",
+   "gain": -0.0005047558633407001,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|upload_type|all|w=7d|a=10)",
+   "gain": -8.130468598432916e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_ratio|user_id+upload_type|all|w=7d|a=10)",
+   "gain": 0.00010368171091146294,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range|rand|w=inf|a=100)",
+   "gain": -0.00031186622122553187,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+hour|rand|w=inf|a=100)",
+   "gain": -3.539993839452027e-06,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|user_id|all|w=7d)",
+   "gain": 3.070354503753592e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_profile_enter|user_id|all|w=inf|a=10)",
+   "gain": -3.667775273075158e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|all|w=1d|a=10)",
+   "gain": 9.806079556728964e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|user_id|std|w=7d)",
+   "gain": -4.0322932592595784e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|follow_user_num_range|all|w=7d)",
+   "gain": -4.784807086932741e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period|rand|w=inf|a=100)",
+   "gain": 4.7234432803633375e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+author_id|all|w=7d|a=10)",
+   "gain": -9.104844919427535e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_id|rand|w=inf|a=100)",
+   "gain": 4.456551565262812e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+tag|std|w=inf|a=100)",
+   "gain": -0.00013342699677404424,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|video_id|rand|w=1h|a=1)",
+   "gain": -0.0002184752498345377,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|is_lowactive_period+video_id|rand|w=7d|a=10)",
+   "gain": 0.00011743964423116537,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+music_type|std|w=7d)",
+   "gain": -0.0008399277212019496,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|rand|w=7d)",
+   "gain": -7.259406210174957e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|follow_user_num_range+music_id|all|w=inf)",
+   "gain": 5.632943422917425e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|video_id+is_rand|all)",
+   "gain": -0.00014344969906049387,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+music_type|all|w=7d|a=10)",
+   "gain": 0.0002305645533131062,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|is_lowactive_period+video_id|std|w=7d)",
+   "gain": -2.459745808147673e-06,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+tag|all|w=7d|a=10)",
+   "gain": 0.000165812903340945,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id|all|w=1d)",
+   "gain": -8.693695415917801e-05,
+   "round": 4,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|is_video_author+tab|all|w=inf)",
+   "gain": -0.0025893165259217032,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|register_days_range+tab|clicked|w=inf)",
+   "gain": -0.00044051580894299835,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_forward|is_video_author+tag+hour|all|w=7d|a=100)",
+   "gain": -0.00013751611355145021,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author+upload_type|std|w=1h|a=10)",
+   "gain": -6.85737673054021e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+dur_bucket|std|w=7d|a=1)",
+   "gain": -0.00015935523587429223,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_video_author+author_id|rand|w=inf)",
+   "gain": -0.00014043315963074843,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|dur_bucket+hour|clicked)",
+   "gain": -0.0001765365435001387,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|video_id|clicked|w=1h)",
+   "gain": -3.9764307022238654e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|is_lowactive_period+author_id+is_rand|all|w=7d|a=10)",
+   "gain": -1.620125883877721e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|music_type+is_rand|std|w=1h)",
+   "gain": -0.00014478819692798073,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|is_lowactive_period|all)",
+   "gain": -4.405652140265781e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|user_active_degree+upload_type|all|w=inf)",
+   "gain": -0.0012519972931793744,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_active_degree+music_id+hour|rand|w=1h|a=10)",
+   "gain": -0.00017615653298735934,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|dur_bucket|std)",
+   "gain": -0.00010740054089308781,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+upload_type|rand|w=1h|a=10)",
+   "gain": -0.00013676520558225658,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_id+upload_type|rand|w=7d|a=10)",
+   "gain": 5.364299136223494e-06,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|register_days_range+hour|all)",
+   "gain": -7.974563649021382e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|author_id|rand|w=1d)",
+   "gain": 6.213061542109655e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|video_type|all)",
+   "gain": -0.00011894354481606362,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|is_video_author+music_type|clicked)",
+   "gain": -0.00016275975363899686,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|user_id+is_rand|all|w=7d)",
+   "gain": 2.432523360273997e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+upload_type|all|w=7d|a=10)",
+   "gain": -0.00025972190748929647,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_like|user_id+video_id+tab|all)",
+   "gain": 0.0,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|video_type|all|w=7d|a=10)",
+   "gain": -0.00014086319062683872,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|is_video_author+tag|rand|w=1h|a=10)",
+   "gain": -4.7984903795095235e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|register_days_range+video_id|rand|w=7d)",
+   "gain": -0.00011009445679555085,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_forward|user_active_degree+dur_bucket|all|w=inf|a=10)",
+   "gain": -0.0001419393055313023,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(long_view|user_active_degree+upload_type+hour|clicked)",
+   "gain": -0.00011525205736134803,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_id+upload_type+is_rand|all|w=7d|a=100)",
+   "gain": 1.9347964157145903e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|music_id|rand|w=1d|a=10)",
+   "gain": -1.972833702346133e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|register_days_range+video_type|all|w=7d|a=10)",
+   "gain": -0.0003799784799460304,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range+tab|all|w=1h)",
+   "gain": -6.849646084633454e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+author_id|all|w=1d|a=100)",
+   "gain": -0.0004423506717399772,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|is_lowactive_period+dur_bucket|rand)",
+   "gain": -4.404966866411453e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range+music_type|rand|w=1d)",
+   "gain": -0.00013627518608899658,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|music_id+is_rand|rand|w=inf)",
+   "gain": 0.000257756517486718,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_video_author+music_id|std|w=1d|a=1)",
+   "gain": 4.255559847377022e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_follow|user_active_degree+music_id|all|w=1d|a=10)",
+   "gain": -0.00011073018982249438,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|register_days_range|all|w=1d)",
+   "gain": -0.0005320988557398487,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_active_degree+video_type+hour|all|w=7d|a=100)",
+   "gain": -0.0005255851180501203,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|user_id+tab|rand|w=7d)",
+   "gain": 6.645375947228471e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|register_days_range+music_id|all|w=7d|a=10)",
+   "gain": -0.00017275304614161602,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_lowactive_period+is_rand|rand|w=1h)",
+   "gain": -0.0006057107506662329,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|upload_type|all|w=1h)",
+   "gain": -0.0016420594656552656,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+dur_bucket|rand|w=1h|a=1)",
+   "gain": -0.00019515628428545817,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_comment|fans_user_num_range+music_type|rand)",
+   "gain": -0.00010205855078704307,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id+video_id|all|w=inf|a=100)",
+   "gain": -0.00030303667075554097,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range|all|w=inf)",
+   "gain": -0.0007566931491403417,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+hour|all|w=7d)",
+   "gain": -0.0002134576390784848,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|music_type+is_rand|all|w=1d|a=10)",
+   "gain": -0.000111993679496325,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_video_author+music_id|rand|w=1h|a=1)",
+   "gain": -0.00011433157361728785,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+video_type|all|w=1d|a=10)",
+   "gain": -6.113675782715156e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|is_video_author+hour|std|w=inf|a=1)",
+   "gain": -0.00015324249890930064,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+tab|rand|w=inf|a=10)",
+   "gain": -0.00017863356883551784,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|author_id|clicked|w=1d)",
+   "gain": -5.447095186461581e-06,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|fans_user_num_range|all|w=7d)",
+   "gain": -0.0006727498798228537,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|register_days_range+music_type|all|w=1h)",
+   "gain": -0.00011410584349136332,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_hate|is_lowactive_period+hour|rand|w=inf|a=10)",
+   "gain": -0.00021894356265794723,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|user_id+music_type|std|w=1h|a=10)",
+   "gain": -0.0015906669699783382,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_forward|upload_type+tab|all|w=1d)",
+   "gain": -3.165274990518663e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|user_active_degree+music_id+hour|std|w=inf|a=1)",
+   "gain": -0.0002523773313704014,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|is_video_author|all)",
+   "gain": -0.00018136249064748533,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|follow_user_num_range+tab|all|w=1d|a=10)",
+   "gain": 0.00017722625355232058,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|fans_user_num_range+video_type|all|w=1d)",
+   "gain": -0.00024221635941501507,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|register_days_range+music_id|std|w=1h|a=10)",
+   "gain": -0.0013270365948221396,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|video_type|all|w=7d)",
+   "gain": -0.0014391370468445075,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|music_id+hour|all|w=1h|a=10)",
+   "gain": -0.0001867085232919452,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|user_active_degree+dur_bucket+hour|std|w=1h|a=100)",
+   "gain": -6.69864187417546e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_ratio|is_video_author|all|w=1h)",
+   "gain": -0.0014927219502916533,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|fans_user_num_range+video_type+is_rand|all|w=7d|a=10)",
+   "gain": -0.00017124526853523614,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_follow|author_id+tab|all)",
+   "gain": -0.00015331720643535496,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_video_author+tab|all|w=inf|a=10)",
+   "gain": -0.0002640044877371128,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|tag|all|w=7d|a=100)",
+   "gain": -0.00018782951272533488,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|fans_user_num_range+upload_type|std)",
+   "gain": -0.00010182349273291091,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|dur_bucket|rand|w=1d)",
+   "gain": -0.00020785140098361632,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(is_click|upload_type+is_rand|std)",
+   "gain": -9.107131139562963e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+dur_bucket+hour|all|w=inf|a=100)",
+   "gain": -5.807888795222871e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_comment|music_id+hour|all|w=1d|a=1)",
+   "gain": -0.00023175430225819138,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(imp|user_active_degree+music_type|all)",
+   "gain": -0.00010230263386051819,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|is_video_author+music_type|clicked|w=1h|a=10)",
+   "gain": -4.4108014049693e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|is_lowactive_period+tag|all|w=inf|a=100)",
+   "gain": -6.822545920082135e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_s|user_active_degree+is_rand|all)",
+   "gain": -0.00019005639337488223,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|music_type|all|w=7d|a=1)",
+   "gain": -0.004210022054628448,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(play_s|is_video_author+author_id|clicked|w=inf)",
+   "gain": 5.290659579887391e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_hate|user_active_degree|all|w=inf)",
+   "gain": -0.0005417463228772901,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+author_id|std|w=1d|a=10)",
+   "gain": -0.00017713502298416506,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_click|upload_type|std|w=inf|a=100)",
+   "gain": -9.341267068635473e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_lowactive_period+author_id+tab|all|w=inf)",
+   "gain": 0.00012994157165036047,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_s|author_id+tab|all|w=1d|a=10)",
+   "gain": -0.0003021542205385308,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "recency(play_ratio|video_type+is_rand|std)",
+   "gain": -0.00018750794511057656,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id|all|w=1d)",
+   "gain": -0.0002195311800919364,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(long_view|register_days_range+music_id+tab|all|w=7d|a=1)",
+   "gain": 7.301024196287864e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "sum(is_click|is_video_author+video_type|all|w=7d)",
+   "gain": -0.007646328357426124,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_like|fans_user_num_range+video_id|all|w=7d|a=10)",
+   "gain": -8.882614560129509e-05,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(play_ratio|tag|all|w=inf|a=10)",
+   "gain": -1.4750005953301226e-06,
+   "round": 5,
+   "source": "random"
+  },
+  {
+   "name": "rate(is_forward|is_video_author|all|w=inf|a=10)",
+   "gain": -2.5519579453570085e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(long_view|video_id+hour|rand)",
+   "gain": -0.00023847647933183946,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|user_id|all|w=1h)",
+   "gain": 6.182891832640092e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+tab|all|w=7d|a=10)",
+   "gain": 1.1055147726424241e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|is_lowactive_period+video_id+hour|std|w=7d)",
+   "gain": 2.3266842550939693e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|std|w=7d|a=100)",
+   "gain": -0.00026773636284577185,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+music_id|rand|w=inf|a=100)",
+   "gain": -6.752277380284166e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type|std|w=inf|a=100)",
+   "gain": -0.00012549974415704268,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_forward|user_id|all|w=inf|a=1)",
+   "gain": 7.224199213867744e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(long_view|follow_user_num_range+music_id|all|w=inf|a=10)",
+   "gain": -2.5968334573245322e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+tag|all|w=1d)",
+   "gain": 1.7798821607128978e-06,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|tag|all)",
+   "gain": -0.000153437468758455,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+music_type|rand|w=inf|a=100)",
+   "gain": -5.239400499862379e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+upload_type+is_rand|all|w=7d|a=10)",
+   "gain": 5.613558623118742e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|author_id+is_rand|std|w=7d|a=10)",
+   "gain": -7.639559431432685e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|user_id|rand)",
+   "gain": -0.0002047634472614468,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(imp|register_days_range|all|w=7d)",
+   "gain": -0.0006565279874636287,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id+video_id|all|w=7d|a=10)",
+   "gain": -0.001538697447961479,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|user_id+upload_type+hour|all|w=7d)",
+   "gain": -1.033221263618822e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(play_ratio|user_id+upload_type|all|w=1d|a=10)",
+   "gain": 3.386318414733136e-06,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_forward|is_lowactive_period|all|w=inf|a=10)",
+   "gain": -2.4839198451975797e-06,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(long_view|follow_user_num_range+upload_type|all|w=7d)",
+   "gain": -0.00011434567143703278,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|user_id|rand|w=7d|a=100)",
+   "gain": -4.511632995585213e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|author_id+is_rand|rand|w=7d|a=10)",
+   "gain": 0.00042737179059088026,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "sum(is_click|music_id+follow_user_num_range|all|w=7d)",
+   "gain": 1.1707655643178327e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|music_id|all)",
+   "gain": -8.0044948658764e-06,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_forward|user_id|std|w=inf|a=10)",
+   "gain": -1.57875042168798e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "recency(is_click|video_id+is_lowactive_period|all)",
+   "gain": -2.0971965214833244e-05,
+   "round": 5,
+   "source": "mutation"
+  },
+  {
+   "name": "rate(is_click|fans_user_num_range+upload_type|all|w=1d|a=10)",
+   "gain": -0.00011156776797005552,
+   "round": 5,
+   "source": "mutation"
+  }
+ ]
+}

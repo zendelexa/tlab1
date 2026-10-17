@@ -1,0 +1,87 @@
+step 25 R 0.9509 KL 0.1604 H 6.953 9s
+step 50 R 0.9543 KL 0.1628 H 6.429 16s
+step 75 R 0.9494 KL 0.2492 H 6.748 24s
+step 100 R 0.9471 KL 0.2585 H 6.525 32s
+step 125 R 0.9484 KL 0.2191 H 6.501 40s
+step 150 R 0.9520 KL 0.2681 H 6.648 48s
+step 175 R 0.9499 KL 0.3058 H 6.666 56s
+step 200 R 0.9509 KL 0.3321 H 7.079 64s
+step 225 R 0.9519 KL 0.3396 H 6.990 71s
+step 250 R 0.9477 KL 0.3097 H 6.878 79s
+step 275 R 0.9508 KL 0.3485 H 5.772 88s
+step 300 R 0.9440 KL 0.4217 H 6.377 96s
+step 325 R 0.9547 KL 0.3441 H 6.598 104s
+step 350 R 0.9540 KL 0.3694 H 6.781 112s
+step 375 R 0.9537 KL 0.4043 H 6.432 121s
+step 400 R 0.9547 KL 0.3690 H 6.542 129s
+step 425 R 0.9544 KL 0.3414 H 6.721 136s
+step 450 R 0.9505 KL 0.4852 H 6.705 144s
+step 475 R 0.9564 KL 0.4045 H 6.725 152s
+step 500 R 0.9519 KL 0.3892 H 6.445 160s
+<repo>\task2_rl\src\rl.py:208: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  m.update(step=step, train_return=float(ret.mean()), train_kl=float(kl), time=time.time() - t0)
+{"kl_ref": 0.3985, "entropy": 6.8736, "next_recall@10": 0.1264, "day_recall@10": 0.1285, "coverage@10": 0.1688, "repeat_share@10": 0.5717, "mean_len@10": 166.8823, "reward_A": 0.9475, "ratio_A": 0.6481, "top10_reward_A": 0.949, "reward_B": 0.9465, "ratio_B": 0.6543, "top10_reward_B": 0.947, "step": 500, "train_return": 0.9519, "train_kl": 0.3892, "time": 172.6892}
+step 525 R 0.9507 KL 0.3542 H 6.367 181s
+step 550 R 0.9473 KL 0.3670 H 6.580 189s
+step 575 R 0.9583 KL 0.3827 H 6.717 198s
+step 600 R 0.9499 KL 0.3785 H 6.238 206s
+step 625 R 0.9475 KL 0.3709 H 6.593 214s
+step 650 R 0.9546 KL 0.4368 H 6.689 222s
+step 675 R 0.9546 KL 0.4148 H 6.874 230s
+step 700 R 0.9498 KL 0.3492 H 6.531 238s
+step 725 R 0.9532 KL 0.4324 H 6.730 246s
+step 750 R 0.9527 KL 0.4748 H 6.621 254s
+step 775 R 0.9549 KL 0.4834 H 6.479 263s
+step 800 R 0.9551 KL 0.5096 H 6.607 271s
+step 825 R 0.9490 KL 0.4950 H 6.717 279s
+step 850 R 0.9571 KL 0.4283 H 7.278 287s
+step 875 R 0.9460 KL 0.5286 H 6.668 296s
+step 900 R 0.9545 KL 0.4601 H 6.575 304s
+step 925 R 0.9536 KL 0.5068 H 6.136 312s
+step 950 R 0.9502 KL 0.4663 H 6.754 320s
+step 975 R 0.9505 KL 0.4562 H 6.809 328s
+step 1000 R 0.9549 KL 0.4530 H 7.145 337s
+{"kl_ref": 0.4668, "entropy": 6.9432, "next_recall@10": 0.1245, "day_recall@10": 0.1203, "coverage@10": 0.1701, "repeat_share@10": 0.5787, "mean_len@10": 168.2523, "reward_A": 0.9477, "ratio_A": 0.6491, "top10_reward_A": 0.9492, "reward_B": 0.9465, "ratio_B": 0.6538, "top10_reward_B": 0.947, "step": 1000, "train_return": 0.9549, "train_kl": 0.453, "time": 348.5686}
+step 1025 R 0.9543 KL 0.4457 H 6.790 357s
+step 1050 R 0.9543 KL 0.4684 H 6.932 366s
+step 1075 R 0.9524 KL 0.4312 H 6.860 374s
+step 1100 R 0.9529 KL 0.4449 H 6.212 383s
+step 1125 R 0.9529 KL 0.4494 H 6.207 390s
+step 1150 R 0.9530 KL 0.4880 H 6.312 398s
+step 1175 R 0.9477 KL 0.4928 H 6.468 407s
+step 1200 R 0.9536 KL 0.4452 H 6.780 416s
+step 1225 R 0.9505 KL 0.4899 H 6.402 425s
+step 1250 R 0.9484 KL 0.4703 H 6.495 433s
+step 1275 R 0.9500 KL 0.4749 H 6.378 442s
+step 1300 R 0.9541 KL 0.4934 H 6.954 450s
+step 1325 R 0.9513 KL 0.4598 H 6.889 459s
+step 1350 R 0.9567 KL 0.4798 H 6.694 467s
+step 1375 R 0.9494 KL 0.4703 H 6.451 476s
+step 1400 R 0.9529 KL 0.4271 H 6.515 485s
+step 1425 R 0.9539 KL 0.3997 H 6.395 494s
+step 1450 R 0.9504 KL 0.4310 H 6.571 502s
+step 1475 R 0.9563 KL 0.5080 H 6.862 511s
+step 1500 R 0.9553 KL 0.4728 H 7.080 519s
+{"kl_ref": 0.531, "entropy": 6.7094, "next_recall@10": 0.1255, "day_recall@10": 0.125, "coverage@10": 0.1699, "repeat_share@10": 0.6164, "mean_len@10": 165.3797, "reward_A": 0.9479, "ratio_A": 0.6498, "top10_reward_A": 0.9494, "reward_B": 0.9468, "ratio_B": 0.6548, "top10_reward_B": 0.9473, "step": 1500, "train_return": 0.9553, "train_kl": 0.4728, "time": 530.2383}
+step 1525 R 0.9502 KL 0.4749 H 6.203 539s
+step 1550 R 0.9592 KL 0.4801 H 6.363 547s
+step 1575 R 0.9542 KL 0.4832 H 6.661 556s
+step 1600 R 0.9573 KL 0.4590 H 7.066 564s
+step 1625 R 0.9610 KL 0.4771 H 6.851 572s
+step 1650 R 0.9514 KL 0.5124 H 6.333 580s
+step 1675 R 0.9522 KL 0.4680 H 6.524 587s
+step 1700 R 0.9531 KL 0.5142 H 6.517 596s
+step 1725 R 0.9555 KL 0.4810 H 6.423 603s
+step 1750 R 0.9518 KL 0.4799 H 6.447 611s
+step 1775 R 0.9486 KL 0.4802 H 6.921 619s
+step 1800 R 0.9567 KL 0.5396 H 6.700 626s
+step 1825 R 0.9521 KL 0.4365 H 6.429 635s
+step 1850 R 0.9476 KL 0.5029 H 6.577 642s
+step 1875 R 0.9591 KL 0.4626 H 6.612 651s
+step 1900 R 0.9471 KL 0.4666 H 6.457 659s
+step 1925 R 0.9568 KL 0.5077 H 6.201 667s
+step 1950 R 0.9535 KL 0.5069 H 6.863 675s
+step 1975 R 0.9519 KL 0.5021 H 6.594 682s
+step 2000 R 0.9508 KL 0.4783 H 6.622 690s
+{"kl_ref": 0.473, "entropy": 6.7421, "next_recall@10": 0.1189, "day_recall@10": 0.1242, "coverage@10": 0.1717, "repeat_share@10": 0.6083, "mean_len@10": 167.406, "reward_A": 0.948, "ratio_A": 0.649, "top10_reward_A": 0.9493, "reward_B": 0.9466, "ratio_B": 0.654, "top10_reward_B": 0.947, "step": 2000, "train_return": 0.9508, "train_kl": 0.4783, "time": 701.8424}

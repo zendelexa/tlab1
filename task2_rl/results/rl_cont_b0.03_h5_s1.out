@@ -1,0 +1,17 @@
+step 25 R 4.7595 KL 0.0230 H 6.629 100s
+step 50 R 4.7635 KL 0.0255 H 6.903 183s
+step 75 R 4.7664 KL 0.0242 H 6.773 270s
+step 100 R 4.7294 KL 0.0382 H 6.260 347s
+step 125 R 4.7481 KL 0.0377 H 6.047 433s
+step 150 R 4.7762 KL 0.0286 H 6.958 525s
+step 175 R 4.7573 KL 0.0398 H 6.256 615s
+step 200 R 4.7510 KL 0.0341 H 6.973 722s
+step 225 R 4.7435 KL 0.0365 H 6.565 827s
+step 250 R 4.7746 KL 0.0404 H 6.405 920s
+<repo>\task2_rl\src\rl.py:208: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  m.update(step=step, train_return=float(ret.mean()), train_kl=float(kl), time=time.time() - t0)
+{"kl_ref": 0.0449, "entropy": 6.9991, "next_recall@10": 0.1547, "day_recall@10": 0.1471, "coverage@10": 0.2162, "repeat_share@10": 0.7215, "mean_len@10": 188.076, "reward_A": 0.9456, "ratio_A": 0.6436, "top10_reward_A": 0.9458, "reward_B": 0.9457, "ratio_B": 0.6499, "top10_reward_B": 0.9458, "step": 250, "train_return": 4.7746, "train_kl": 0.0404, "time": 933.6195}
+step 275 R 4.7672 KL 0.0443 H 5.931 1025s
+step 300 R 4.7678 KL 0.0330 H 7.145 1113s
+{"kl_ref": 0.038, "entropy": 6.9026, "next_recall@10": 0.1575, "day_recall@10": 0.147, "coverage@10": 0.2178, "repeat_share@10": 0.711, "mean_len@10": 189.5207, "reward_A": 0.9455, "ratio_A": 0.6433, "top10_reward_A": 0.9458, "reward_B": 0.9456, "ratio_B": 0.6492, "top10_reward_B": 0.9458, "step": 300, "train_return": 4.7678, "train_kl": 0.033, "time": 1123.5423}

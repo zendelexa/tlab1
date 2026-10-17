@@ -1,0 +1,41 @@
+=== Thu Oct 15 20:57:08 RTZ 2026 START RL rl_time_b0.03_h1
+step 25 R 0.6304 KL 1.8465 H 7.654 5s
+step 50 R 0.8872 KL 3.7776 H 6.214 12s
+step 75 R 1.1922 KL 8.8315 H 2.849 17s
+step 100 R 1.4859 KL 11.2826 H 0.981 21s
+step 125 R 1.3080 KL 12.3656 H 1.219 26s
+step 150 R 1.2691 KL 11.0563 H 1.182 31s
+step 175 R 1.3918 KL 10.9536 H 1.055 41s
+step 200 R 1.2848 KL 11.2904 H 1.058 49s
+step 225 R 1.3163 KL 11.0304 H 1.060 56s
+step 250 R 1.4546 KL 10.8404 H 1.187 63s
+<repo>\task2_rl\src\rl.py:208: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:821.)
+  m.update(step=step, train_return=float(ret.mean()), train_kl=float(kl), time=time.time() - t0)
+{"kl_ref": 10.9323, "entropy": 1.2074, "next_recall@10": 0.0047, "day_recall@10": 0.0042, "coverage@10": 0.0021, "repeat_share@10": 0.0144, "mean_len@10": 335.9207, "reward_A": 1.3363, "ratio_A": 0.5858, "top10_reward_A": 1.0047, "reward_B": 1.3343, "ratio_B": 0.5846, "top10_reward_B": 1.0004, "step": 250, "train_return": 1.4546, "train_kl": 10.8404, "time": 70.8594}
+step 275 R 1.2491 KL 11.3471 H 1.164 79s
+step 300 R 1.4308 KL 10.5263 H 1.024 86s
+step 325 R 1.1566 KL 9.9708 H 1.016 93s
+step 350 R 1.3928 KL 10.6377 H 1.008 104s
+step 375 R 1.2113 KL 10.1204 H 1.029 109s
+step 400 R 1.1589 KL 10.9456 H 1.036 114s
+step 425 R 1.2848 KL 10.9120 H 1.077 118s
+step 450 R 2.7410 KL 14.6359 H 0.009 124s
+step 475 R 3.0111 KL 14.0969 H 0.005 130s
+step 500 R 3.2840 KL 15.0962 H 0.002 137s
+{"kl_ref": 14.0891, "entropy": 0.0023, "next_recall@10": 0.0, "day_recall@10": 0.0009, "coverage@10": 0.0012, "repeat_share@10": 0.0005, "mean_len@10": 639.555, "reward_A": 3.3092, "ratio_A": 0.5493, "top10_reward_A": 1.7806, "reward_B": 2.9748, "ratio_B": 0.4938, "top10_reward_B": 1.6741, "step": 500, "train_return": 3.284, "train_kl": 15.0962, "time": 145.8528}
+step 525 R 3.6780 KL 14.4300 H 0.002 151s
+step 550 R 3.4852 KL 15.1567 H 0.003 157s
+step 575 R 2.6480 KL 14.5732 H 0.001 162s
+step 600 R 3.5043 KL 15.0103 H 0.005 167s
+step 625 R 3.2028 KL 15.3923 H 0.003 172s
+step 650 R 3.9368 KL 14.1366 H 0.001 178s
+step 675 R 2.8450 KL 14.2427 H 0.002 183s
+step 700 R 3.3154 KL 14.8627 H 0.001 188s
+step 725 R 2.8806 KL 14.7721 H 0.001 193s
+step 750 R 3.0304 KL 14.8141 H 0.001 198s
+{"kl_ref": 14.0908, "entropy": 0.0007, "next_recall@10": 0.0009, "day_recall@10": 0.0013, "coverage@10": 0.0007, "repeat_share@10": 0.0025, "mean_len@10": 557.6027, "reward_A": 3.3096, "ratio_A": 0.5493, "top10_reward_A": 1.5902, "reward_B": 2.9751, "ratio_B": 0.4938, "top10_reward_B": 1.4803, "step": 750, "train_return": 3.0304, "train_kl": 14.8141, "time": 206.6629}
+step 775 R 3.3608 KL 14.7191 H 0.001 213s
+step 800 R 3.0150 KL 16.5990 H 0.004 218s
+{"kl_ref": 14.0866, "entropy": 0.0043, "next_recall@10": 0.0009, "day_recall@10": 0.001, "coverage@10": 0.0008, "repeat_share@10": 0.0021, "mean_len@10": 545.999, "reward_A": 3.3088, "ratio_A": 0.5493, "top10_reward_A": 1.5547, "reward_B": 2.9745, "ratio_B": 0.4939, "top10_reward_B": 1.4413, "step": 800, "train_return": 3.015, "train_kl": 16.599, "time": 224.918}
+=== Thu Oct 15 21:01:50 RTZ 2026 END rc=0

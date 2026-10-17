@@ -1,0 +1,42 @@
+=== Thu Oct 15 22:59:16 RTZ 2026 START grid windows
+{"round": 0, "base_screen_ll": 0.4665821609070466, "n_candidates": 99, "n_accepted": 8, "time": 85.18206429481506, "total_time": 85.1820695400238, "src_stats": {"random": {"n": 99, "hit": 23, "best": 0.003330588665192702}, "mutation": {"n": 0, "hit": 0, "best": 0.0}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00333 (cond 0.00333) random   rate(is_click|is_video_author+author_id+tab|all|w=7d|a=1)
+   + 0.00285 (cond 0.00279) random   rate(is_click|user_id+tag|rand|w=7d|a=1)
+   + 0.00247 (cond 0.00187) random   recency(play_s|user_id+video_type|rand)
+   + 0.00101 (cond 0.00117) random   sum(play_ratio|user_id+music_type|all|w=7d)
+   + 0.00147 (cond 0.00044) random   sum(play_ratio|user_id+hour|all|w=1d)
+   + 0.00110 (cond 0.00044) random   sum(play_s|user_id+dur_bucket|rand|w=inf)
+   + 0.00084 (cond 0.00045) random   rate(play_ratio|register_days_range+music_id|rand|w=7d|a=10)
+   + 0.00118 (cond 0.00011) random   rate(is_click|video_id|std|w=7d|a=1)
+<repo>\.venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"round": 1, "base_screen_ll": 0.45503877283943606, "n_candidates": 147, "n_accepted": 16, "time": 97.63888812065125, "total_time": 182.82664704322815, "src_stats": {"random": {"n": 99, "hit": 11, "best": 0.004832702764472396}, "mutation": {"n": 48, "hit": 20, "best": 0.005336079209056377}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00534 (cond 0.00534) mutation rate(is_click|user_id|rand|w=7d|a=1)
+   + 0.00483 (cond 0.00225) random   rate(play_s|user_id+music_type+is_rand|all|w=inf|a=10)
+   + 0.00075 (cond 0.00071) random   rate(is_click|music_id|all|w=7d|a=1)
+   + 0.00433 (cond 0.00026) mutation rate(play_s|user_id+video_type|rand|w=1d|a=1)
+   + 0.00020 (cond 0.00016) random   sum(is_click|fans_user_num_range+music_id|rand|w=inf)
+   + 0.00108 (cond 0.00016) mutation rate(play_ratio|user_id+hour|all|w=1d|a=10)
+   + 0.00021 (cond 0.00006) random   recency(play_s|user_id+video_type+hour|all)
+   + 0.00065 (cond 0.00006) mutation rate(is_click|is_video_author+author_id+tab|all|w=inf|a=1)
+<repo>\.venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+{"round": 2, "base_screen_ll": 0.4418578133579555, "n_candidates": 149, "n_accepted": 22, "time": 93.86099195480347, "total_time": 276.6915738582611, "src_stats": {"random": {"n": 100, "hit": 8, "best": 0.001198791815946787}, "mutation": {"n": 49, "hit": 11, "best": 0.000804677598436887}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00120 (cond 0.00120) random   rate(long_view|user_id+music_type|all|w=inf|a=10)
+   + 0.00065 (cond 0.00062) random   rate(is_click|is_lowactive_period+music_id+is_rand|all|w=inf|a=10)
+   + 0.00012 (cond 0.00020) random   rate(is_comment|follow_user_num_range+author_id|clicked|w=1h|a=10)
+   + 0.00080 (cond 0.00028) mutation rate(is_click|user_id|std|w=7d|a=1)
+   + 0.00020 (cond 0.00010) random   rate(is_profile_enter|user_id+tag|std|w=inf|a=1)
+   + 0.00009 (cond 0.00011) random   recency(play_ratio|follow_user_num_range+tag+hour|all)
+{"round": 3, "base_screen_ll": 0.4356187500578713, "n_candidates": 151, "n_accepted": 25, "time": 86.03624701499939, "total_time": 362.73530530929565, "src_stats": {"random": {"n": 98, "hit": 5, "best": 0.00022864270549338706}, "mutation": {"n": 53, "hit": 2, "best": 0.00016793500770095893}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00023 (cond 0.00023) random   sum(is_click|music_id|rand|w=7d)
+   + 0.00017 (cond 0.00020) mutation rate(play_s|user_id+video_type|rand|w=inf|a=1)
+   + 0.00015 (cond 0.00009) random   rate(is_click|is_video_author+video_id|all|w=inf|a=10)
+{"round": 4, "base_screen_ll": 0.4352242245765875, "n_candidates": 148, "n_accepted": 26, "time": 83.44763731956482, "total_time": 446.19294595718384, "src_stats": {"random": {"n": 100, "hit": 0, "best": 2.9345518508916424e-05}, "mutation": {"n": 48, "hit": 3, "best": 9.422854146967641e-05}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00009 (cond 0.00009) mutation sum(is_click|user_id|rand|w=7d)
+{"round": 5, "base_screen_ll": 0.43459597456860677, "n_candidates": 151, "n_accepted": 27, "time": 119.77235102653503, "total_time": 565.9793078899384, "src_stats": {"random": {"n": 100, "hit": 2, "best": 0.0001294907465103634}, "mutation": {"n": 51, "hit": 1, "best": 9.255102258626247e-05}, "agent": {"n": 0, "hit": 0, "best": 0.0}}}
+   + 0.00013 (cond 0.00013) random   rate(is_comment|video_id+tab|clicked|w=inf|a=100)
+autofe_grid_s0 0 {"val": {"logloss": 0.4321, "auc": 0.7931, "gauc": 0.6322, "ndcg10": 0.7185, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4239, "auc": 0.7867, "gauc": 0.6408, "ndcg10": 0.7079, "n": 475980, "groups": 35150}}
+autofe_grid_s0 1 {"val": {"logloss": 0.432, "auc": 0.7931, "gauc": 0.6307, "ndcg10": 0.7176, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4236, "auc": 0.7871, "gauc": 0.6408, "ndcg10": 0.7081, "n": 475980, "groups": 35150}}
+autofe_grid_s0 2 {"val": {"logloss": 0.4319, "auc": 0.7932, "gauc": 0.6325, "ndcg10": 0.7188, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4236, "auc": 0.787, "gauc": 0.641, "ndcg10": 0.7079, "n": 475980, "groups": 35150}}
+=== Thu Oct 15 23:15:50 RTZ 2026 END rc=0

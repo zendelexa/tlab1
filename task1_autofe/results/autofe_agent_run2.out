@@ -1,0 +1,3 @@
+autofe_agent_run2_s0 0 {"val": {"logloss": 0.4301, "auc": 0.7957, "gauc": 0.6297, "ndcg10": 0.7192, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4219, "auc": 0.7897, "gauc": 0.6396, "ndcg10": 0.7072, "n": 475980, "groups": 35150}}
+autofe_agent_run2_s0 1 {"val": {"logloss": 0.4298, "auc": 0.796, "gauc": 0.6302, "ndcg10": 0.719, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4218, "auc": 0.7896, "gauc": 0.6394, "ndcg10": 0.7074, "n": 475980, "groups": 35150}}
+autofe_agent_run2_s0 2 {"val": {"logloss": 0.4299, "auc": 0.7958, "gauc": 0.6298, "ndcg10": 0.7186, "n": 442975, "groups": 34762}, "test": {"logloss": 0.4215, "auc": 0.7901, "gauc": 0.6415, "ndcg10": 0.7083, "n": 475980, "groups": 35150}}

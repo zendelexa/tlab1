@@ -1,0 +1,12 @@
+static|rate(is_click|user_id)                           best window    720.0h gain 0.00843  7d gain 0.00713
+static|rate(is_click|video_id)                          best window    266.0h gain 0.00445  7d gain 0.00428
+static|rate(is_click|user_id+author_id)                 best window    720.0h gain -0.00024  7d gain -0.00463
+static|sum(imp|video_id)                                best window    437.6h gain 0.00147  7d gain 0.00073
+static|rate(long_view|user_id+tag)                      best window    720.0h gain 0.00491  7d gain 0.00180
+static|drate(is_click|user_id)                          best window    161.7h gain 0.00856  7d gain 0.00856
+manual|rate(is_click|user_id)                           best window    720.0h gain 0.00102  7d gain -0.00001
+manual|rate(is_click|video_id)                          best window    720.0h gain 0.00060  7d gain 0.00027
+manual|rate(is_click|user_id+author_id)                 best window    720.0h gain -0.00016  7d gain -0.00108
+manual|sum(imp|video_id)                                best window    437.6h gain -0.00001  7d gain -0.00006
+manual|rate(long_view|user_id+tag)                      best window    720.0h gain 0.00004  7d gain -0.00006
+manual|drate(is_click|user_id)                          best window    720.0h gain 0.00091  7d gain 0.00049

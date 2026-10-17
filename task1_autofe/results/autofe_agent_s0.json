@@ -1,0 +1,437 @@
+{
+ "args": {
+  "variant": "agent",
+  "rounds": 10,
+  "seed": 0,
+  "tune": false,
+  "curve": false,
+  "objective": "logloss"
+ },
+ "accepted": [
+  "rate(is_click|user_id|rand|w=inf|a=10)",
+  "rate(is_click|video_id|rand|w=inf|a=20)",
+  "rate(is_click|user_id|std|w=inf|a=10)",
+  "drate(is_click|user_id|all|hl=3h|a=5)",
+  "rate(is_click|music_id|all|w=inf|a=30)",
+  "rate(is_click|user_id+tab|all|w=inf|a=10)",
+  "recency(imp|user_id+tab|all)",
+  "rate(is_click|author_id+tab|all|w=inf|a=30)",
+  "drate(is_click|user_id|rand|hl=2d|a=5)",
+  "recency(is_click|user_id+tag|all)",
+  "rate(is_hate|user_id|std|w=inf|a=50)",
+  "sum(imp|user_id+tab|all|w=15m)",
+  "recency(long_view|user_id|all)",
+  "rate(is_click|user_id+tag|all|w=inf|a=50)",
+  "rate(is_follow|author_id|clicked|w=inf|a=100)",
+  "rate(is_like|video_id|clicked|w=inf|a=50)"
+ ],
+ "n_evaluated": 160,
+ "search_time": 0.0176851749420166,
+ "specs": [
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "video_id"
+   ],
+   "filt": "rand",
+   "window": Infinity,
+   "alpha": 20.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "std",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "drate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "all",
+   "window": 10800.0,
+   "alpha": 5.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "music_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 30.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "tab"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 10.0
+  },
+  {
+   "agg": "recency",
+   "signal": "imp",
+   "key": [
+    "user_id",
+    "tab"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "author_id",
+    "tab"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 30.0
+  },
+  {
+   "agg": "drate",
+   "signal": "is_click",
+   "key": [
+    "user_id"
+   ],
+   "filt": "rand",
+   "window": 172800.0,
+   "alpha": 5.0
+  },
+  {
+   "agg": "recency",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "tag"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_hate",
+   "key": [
+    "user_id"
+   ],
+   "filt": "std",
+   "window": Infinity,
+   "alpha": 50.0
+  },
+  {
+   "agg": "sum",
+   "signal": "imp",
+   "key": [
+    "user_id",
+    "tab"
+   ],
+   "filt": "all",
+   "window": 900.0,
+   "alpha": 1.0
+  },
+  {
+   "agg": "recency",
+   "signal": "long_view",
+   "key": [
+    "user_id"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 1.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_click",
+   "key": [
+    "user_id",
+    "tag"
+   ],
+   "filt": "all",
+   "window": Infinity,
+   "alpha": 50.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_follow",
+   "key": [
+    "author_id"
+   ],
+   "filt": "clicked",
+   "window": Infinity,
+   "alpha": 100.0
+  },
+  {
+   "agg": "rate",
+   "signal": "is_like",
+   "key": [
+    "video_id"
+   ],
+   "filt": "clicked",
+   "window": Infinity,
+   "alpha": 50.0
+  }
+ ],
+ "result": {
+  "name": "autofe_agent_s0",
+  "n_features": 60,
+  "seeds": [
+   {
+    "seed": 0,
+    "best_iter": 445,
+    "time": 43.90634727478027,
+    "val": {
+     "all": {
+      "logloss": 0.4304991300636022,
+      "auc": 0.7948273452967227,
+      "gauc": 0.6351403980741231,
+      "ndcg10": 0.7226111616375122,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5721252769025864,
+      "auc": 0.7636231321737725,
+      "gauc": 0.6020469040750729,
+      "ndcg10": 0.8206879943340455,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4007543431489561,
+      "auc": 0.7647827001625028,
+      "gauc": 0.6399324447639039,
+      "ndcg10": 0.6854662096120016,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.42191715201047647,
+      "auc": 0.7886889353296964,
+      "gauc": 0.6437602899794681,
+      "ndcg10": 0.7101881390768687,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5776199841839939,
+      "auc": 0.758942691182835,
+      "gauc": 0.5925229431999302,
+      "ndcg10": 0.8179600094224732,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.40087887816534756,
+      "auc": 0.7698284972494671,
+      "gauc": 0.6476415143560339,
+      "ndcg10": 0.6859676316298601,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "best_iter": 619,
+    "time": 55.35016417503357,
+    "val": {
+     "all": {
+      "logloss": 0.43027977399949957,
+      "auc": 0.7950332394579832,
+      "gauc": 0.6369076756500553,
+      "ndcg10": 0.7237716907056222,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5717870516793258,
+      "auc": 0.764025851213574,
+      "gauc": 0.6055605651000504,
+      "ndcg10": 0.8221174887312056,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4005599523747297,
+      "auc": 0.7650306649613026,
+      "gauc": 0.6414468402770862,
+      "ndcg10": 0.686524872582182,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4218917580007767,
+      "auc": 0.7886588337979277,
+      "gauc": 0.6448668998160458,
+      "ndcg10": 0.7119506014184074,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.576746916803713,
+      "auc": 0.7602342590644597,
+      "gauc": 0.5990123786790754,
+      "ndcg10": 0.8218708189156616,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.4009680201872187,
+      "auc": 0.7696959702492552,
+      "gauc": 0.6483403756378586,
+      "ndcg10": 0.6872472772770384,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "best_iter": 484,
+    "time": 46.61306977272034,
+    "val": {
+     "all": {
+      "logloss": 0.43042961384300854,
+      "auc": 0.7950212494685839,
+      "gauc": 0.6371279505853602,
+      "ndcg10": 0.7241948111502834,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5719437964688625,
+      "auc": 0.7637139024910404,
+      "gauc": 0.6043276934837659,
+      "ndcg10": 0.8218064306322458,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4007083420188733,
+      "auc": 0.7649696374033371,
+      "gauc": 0.6418775356086933,
+      "ndcg10": 0.6872260508110435,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.42201272047247834,
+      "auc": 0.7887197588495376,
+      "gauc": 0.6441015649415719,
+      "ndcg10": 0.7118841626116409,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5771312086128533,
+      "auc": 0.7601588102639889,
+      "gauc": 0.5951334513199837,
+      "ndcg10": 0.8191742421614565,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.40105340209410245,
+      "auc": 0.7696633707356898,
+      "gauc": 0.6478108951120101,
+      "ndcg10": 0.6877719321901666,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   }
+  ],
+  "importance": {
+   "rate(is_click|user_id+tab|all|w=inf|a=10)": 649005.4054393768,
+   "is_rand": 576378.2902956009,
+   "tab": 149146.58585453033,
+   "rate(is_click|author_id+tab|all|w=inf|a=30)": 136021.91068601608,
+   "rate(is_click|user_id|std|w=inf|a=10)": 134438.62969756126,
+   "rate(is_click|user_id|rand|w=inf|a=10)": 98667.07371115685,
+   "rate(is_click|video_id|rand|w=inf|a=20)": 91977.83696603775,
+   "tag": 82034.5124759674,
+   "rate(is_click|music_id|all|w=inf|a=30)": 49149.391214847565,
+   "drate(is_click|user_id|all|hl=3h|a=5)": 37977.5892765522,
+   "drate(is_click|user_id|rand|hl=2d|a=5)": 36759.729305267334,
+   "rate(is_hate|user_id|std|w=inf|a=50)": 34902.3117787838,
+   "recency(imp|user_id+tab|all)": 29069.550300121307,
+   "recency(is_click|user_id+tag|all)": 26832.769018173218,
+   "rate(is_follow|author_id|clicked|w=inf|a=100)": 23648.88953614235,
+   "rate(is_like|video_id|clicked|w=inf|a=50)": 20628.261575698853,
+   "video_duration": 19396.627243041992,
+   "rate(is_click|user_id+tag|all|w=inf|a=50)": 14854.554487228394,
+   "recency(long_view|user_id|all)": 14462.786033630371,
+   "video_age_h": 14035.240684509277,
+   "register_days": 8579.730402708054,
+   "onehot_feat3": 7835.523292541504,
+   "follow_user_num": 7465.4578332901,
+   "hour": 7178.6653842926025,
+   "onehot_feat8": 7167.7325139045715,
+   "sum(imp|user_id+tab|all|w=15m)": 6578.09383392334,
+   "fans_user_num": 5956.574545383453,
+   "onehot_feat1": 5710.702943325043,
+   "friend_user_num": 5515.260217428207,
+   "onehot_feat7": 4672.941143035889,
+   "upload_type": 4154.492913246155,
+   "onehot_feat4": 3587.5896549224854,
+   "onehot_feat2": 2425.836557865143,
+   "onehot_feat0": 2236.7815284729004,
+   "weekday": 2174.1686701774597,
+   "onehot_feat11": 1863.5986819267273,
+   "onehot_feat9": 1849.8632311820984,
+   "server_width": 1715.8887076377869,
+   "dur_bucket": 1681.9460010528564,
+   "user_active_degree": 1640.4361805915833,
+   "friend_user_num_range": 1577.716227054596,
+   "fans_user_num_range": 1491.5454664230347,
+   "follow_user_num_range": 1382.3867976665497,
+   "server_height": 1293.8271913528442,
+   "onehot_feat10": 1227.332790851593,
+   "onehot_feat6": 977.9318714141846,
+   "onehot_feat12": 845.2807097434998,
+   "register_days_range": 803.8562097549438,
+   "n_tags": 718.3843884468079,
+   "music_type": 535.2917528152466,
+   "is_live_streamer": 529.5899896621704,
+   "onehot_feat14": 470.2356071472168,
+   "onehot_feat13": 379.8785104751587,
+   "onehot_feat16": 296.07524824142456,
+   "onehot_feat15": 230.37570762634277,
+   "onehot_feat17": 229.41881227493286,
+   "is_video_author": 208.92237997055054,
+   "onehot_feat5": 123.05790853500366,
+   "video_type": 24.758800506591797,
+   "is_lowactive_period": 0.0
+  }
+ }
+}

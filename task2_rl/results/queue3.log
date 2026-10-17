@@ -1,0 +1,23 @@
+=== Sat Oct 17 07:09:19 RTZ 2026 START rl_ratio_b0.1_h1_s1
+=== Sat Oct 17 07:13:06 RTZ 2026 END rl_ratio_b0.1_h1_s1 rc=0
+=== Sat Oct 17 07:13:06 RTZ 2026 START rl_ratio_b0.03_h1_s1
+=== Sat Oct 17 07:17:33 RTZ 2026 END rl_ratio_b0.03_h1_s1 rc=0
+=== Sat Oct 17 07:17:33 RTZ 2026 START rl_cont_b0.03_h5_s1
+=== Sat Oct 17 07:37:07 RTZ 2026 END rl_cont_b0.03_h5_s1 rc=0
+=== Sat Oct 17 07:37:07 RTZ 2026 START rl_ratio_b0.03_h5_s1
+=== Sat Oct 17 07:56:51 RTZ 2026 END rl_ratio_b0.03_h5_s1 rc=0
+=== Sat Oct 17 07:56:51 RTZ 2026 START rl_ratio_b0.1_h1_s2
+=== Sat Oct 17 08:01:07 RTZ 2026 END rl_ratio_b0.1_h1_s2 rc=0
+=== Sat Oct 17 08:01:08 RTZ 2026 START rl_ratio_b0.03_h1_s2
+=== Sat Oct 17 08:06:00 RTZ 2026 END rl_ratio_b0.03_h1_s2 rc=0
+=== Sat Oct 17 08:06:00 RTZ 2026 START rl_cont_b0.03_h5_s2
+=== Sat Oct 17 08:22:33 RTZ 2026 END rl_cont_b0.03_h5_s2 rc=0
+=== Sat Oct 17 08:22:33 RTZ 2026 START rl_ratio_b0.03_h5_s2
+=== Sat Oct 17 08:37:42 RTZ 2026 END rl_ratio_b0.03_h5_s2 rc=0
+=== Sat Oct 17 08:37:42 RTZ 2026 START rl3_ratio_b0.03_h1_long
+=== Sat Oct 17 08:56:26 RTZ 2026 END rl3_ratio_b0.03_h1_long rc=0
+=== Sat Oct 17 08:56:26 RTZ 2026 eval
+=== Sat Oct 17 09:01:23 RTZ 2026 significance
+=== Sat Oct 17 09:03:02 RTZ 2026 multistep
+=== Sat Oct 17 09:27:08 RTZ 2026 plots
+=== Sat Oct 17 09:27:18 RTZ 2026 QUEUE3 DONE

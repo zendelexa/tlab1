@@ -1,0 +1,958 @@
+{
+ "manual": {
+  "name": "manual_constprior",
+  "n_features": 84,
+  "seeds": [
+   {
+    "seed": 0,
+    "best_iter": 562,
+    "time": 96.94131875038147,
+    "val": {
+     "all": {
+      "logloss": 0.43412032369651976,
+      "auc": 0.7902832584087207,
+      "gauc": 0.6258393392203405,
+      "ndcg10": 0.7149186859554238,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.575115391789553,
+      "auc": 0.7596222967855754,
+      "gauc": 0.5885515621729983,
+      "ndcg10": 0.8138482526663036,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.40450807800567756,
+      "auc": 0.7584147573318547,
+      "gauc": 0.6312387318796387,
+      "ndcg10": 0.6774507752537149,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4263856317975753,
+      "auc": 0.7837085833009375,
+      "gauc": 0.6314777860412338,
+      "ndcg10": 0.701332828161337,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5808452326729449,
+      "auc": 0.7561644145033288,
+      "gauc": 0.5782425057654105,
+      "ndcg10": 0.810969693914905,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.40551534102724446,
+      "auc": 0.7631379113664845,
+      "gauc": 0.635510353699135,
+      "ndcg10": 0.6766931841156746,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "best_iter": 465,
+    "time": 71.71916794776917,
+    "val": {
+     "all": {
+      "logloss": 0.43414958742811116,
+      "auc": 0.7901404840380615,
+      "gauc": 0.6246766254905864,
+      "ndcg10": 0.7139690728318098,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5747918174650141,
+      "auc": 0.7601303941723343,
+      "gauc": 0.5884044886762976,
+      "ndcg10": 0.8139399775335266,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.40461144594068915,
+      "auc": 0.7581546641097577,
+      "gauc": 0.6299289501063305,
+      "ndcg10": 0.6761067728676369,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4260745858409372,
+      "auc": 0.7839552829188389,
+      "gauc": 0.6306595471950488,
+      "ndcg10": 0.6993101458478481,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5801272787486534,
+      "auc": 0.7565239540917155,
+      "gauc": 0.5756490951542177,
+      "ndcg10": 0.8094034503056445,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.4052592757099034,
+      "auc": 0.7633541447550268,
+      "gauc": 0.6348265839533228,
+      "ndcg10": 0.6745679223721412,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "best_iter": 457,
+    "time": 76.09969782829285,
+    "val": {
+     "all": {
+      "logloss": 0.434195611457687,
+      "auc": 0.789996578983982,
+      "gauc": 0.6245855475019938,
+      "ndcg10": 0.713755179657509,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5748621777300815,
+      "auc": 0.7600360246465163,
+      "gauc": 0.5860824177949178,
+      "ndcg10": 0.8124990922752693,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4046523587944323,
+      "auc": 0.7579021821904037,
+      "gauc": 0.6301609272205659,
+      "ndcg10": 0.6763575823233164,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4260842624844526,
+      "auc": 0.7842010774428338,
+      "gauc": 0.6334067245271199,
+      "ndcg10": 0.7023351083672227,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5806677167362906,
+      "auc": 0.7558004121065603,
+      "gauc": 0.5757239359407974,
+      "ndcg10": 0.8099284895398675,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.40519723687883064,
+      "auc": 0.7637155553773614,
+      "gauc": 0.6377761905366075,
+      "ndcg10": 0.6781547143406177,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   }
+  ],
+  "importance": {
+   "rate(is_click|user_id+is_rand|all|w=7d|a=10)": 617631.5281090736,
+   "is_rand": 299140.9300341606,
+   "rate(is_click|user_id|all|w=inf|a=10)": 252370.35603141785,
+   "tab": 223496.0194954872,
+   "rate(is_click|video_id|all|w=7d|a=10)": 186531.7437567711,
+   "rate(is_click|video_id|all|w=inf|a=10)": 148226.72107839584,
+   "tag": 85283.80575275421,
+   "rate(is_click|user_id+tag|all|w=inf|a=10)": 39876.577139377594,
+   "sum(imp|user_id|all|w=inf)": 33528.55908584595,
+   "recency(imp|user_id|all)": 32590.406711101532,
+   "rate(is_click|user_id|all|w=7d|a=10)": 27600.149629592896,
+   "sum(is_click|user_id|all|w=7d)": 24189.362869262695,
+   "video_duration": 20110.15797328949,
+   "rate(is_click|author_id|all|w=7d|a=10)": 18555.62808227539,
+   "video_age_h": 18206.912150859833,
+   "recency(is_click|user_id|all)": 16297.698542118073,
+   "sum(imp|video_id|all|w=7d)": 16129.131037712097,
+   "rate(is_click|video_id|all|w=1d|a=10)": 14739.467187404633,
+   "sum(imp|user_id|all|w=7d)": 13410.805448532104,
+   "rate(play_ratio|user_id|all|w=7d|a=10)": 12670.051074504852,
+   "rate(is_like|video_id|all|w=7d|a=10)": 11186.35587978363,
+   "sum(imp|video_id|all|w=inf)": 10760.672856807709,
+   "rate(long_view|user_id|all|w=7d|a=10)": 10605.267084121704,
+   "recency(imp|user_id+video_id|all)": 9788.997472763062,
+   "sum(is_click|user_id+tag|all|w=7d)": 9414.976093292236,
+   "sum(imp|user_id|all|w=1h)": 7861.8821539878845,
+   "onehot_feat3": 7642.638206005096,
+   "sum(imp|author_id|all|w=7d)": 7442.978878974915,
+   "rate(is_click|video_id+user_active_degree|all|w=7d|a=10)": 6715.374429225922,
+   "rate(is_click|music_id|all|w=7d|a=10)": 6638.59880065918,
+   "rate(is_like|user_id|all|w=7d|a=10)": 6635.824823856354,
+   "onehot_feat1": 6499.770947933197,
+   "rate(play_ratio|video_id|all|w=7d|a=10)": 6397.683103084564,
+   "sum(is_click|user_id|all|w=1d)": 6313.136477947235,
+   "register_days": 6302.289786815643,
+   "hour": 6095.384401798248,
+   "follow_user_num": 5758.136583328247,
+   "rate(is_click|tag|all|w=7d|a=10)": 5700.666821479797,
+   "fans_user_num": 5645.071077823639,
+   "friend_user_num": 5278.664181232452,
+   "onehot_feat8": 4960.450518131256,
+   "sum(imp|user_id|all|w=1d)": 4901.3898911476135,
+   "sum(is_click|user_id+video_id|all|w=inf)": 4433.701204299927,
+   "rate(long_view|author_id|all|w=7d|a=10)": 4156.379008293152,
+   "rate(long_view|video_id|all|w=7d|a=10)": 3951.2254276275635,
+   "sum(imp|video_id|all|w=1d)": 3415.9987807273865,
+   "onehot_feat7": 3320.144061565399,
+   "upload_type": 3125.685784339905,
+   "rate(is_click|user_id+tag|all|w=7d|a=10)": 3002.863329410553,
+   "onehot_feat4": 2897.3429641723633,
+   "onehot_feat11": 2425.6040201187134,
+   "onehot_feat2": 2373.6758580207825,
+   "onehot_feat0": 2201.921106338501,
+   "sum(imp|user_id+tag|all|w=7d)": 1917.513701915741,
+   "user_active_degree": 1791.9239015579224,
+   "server_width": 1717.9602451324463,
+   "dur_bucket": 1346.9509162902832,
+   "onehot_feat9": 1306.7700986862183,
+   "weekday": 1297.1689467430115,
+   "server_height": 1261.0496315956116
+  }
+ },
+ "autofe_logloss": {
+  "name": "autofe_logloss_constprior",
+  "n_features": 82,
+  "seeds": [
+   {
+    "seed": 0,
+    "best_iter": 526,
+    "time": 121.18909692764282,
+    "val": {
+     "all": {
+      "logloss": 0.4321489664041807,
+      "auc": 0.7923666601330205,
+      "gauc": 0.6263746861619078,
+      "ndcg10": 0.7168143001631039,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5732491681921422,
+      "auc": 0.7623478866545061,
+      "gauc": 0.5929721979432238,
+      "ndcg10": 0.8165861937803998,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4025146401906174,
+      "auc": 0.7615251109208071,
+      "gauc": 0.6312114762301726,
+      "ndcg10": 0.6790273723024146,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4234316087486499,
+      "auc": 0.7856618066490039,
+      "gauc": 0.6354991145497824,
+      "ndcg10": 0.7046656406678633,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5750613437660608,
+      "auc": 0.7607448000400292,
+      "gauc": 0.5825956573903046,
+      "ndcg10": 0.8126308929720745,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.40294368413077514,
+      "auc": 0.7660704086354955,
+      "gauc": 0.6395065466366827,
+      "ndcg10": 0.6804016728155232,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "best_iter": 379,
+    "time": 101.96416401863098,
+    "val": {
+     "all": {
+      "logloss": 0.43207758596823403,
+      "auc": 0.7923487041583454,
+      "gauc": 0.6235555598325115,
+      "ndcg10": 0.7152299573091425,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5729008394433943,
+      "auc": 0.7627970680182805,
+      "gauc": 0.5916841936513619,
+      "ndcg10": 0.815237657664317,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4025014253458027,
+      "auc": 0.7614584757979137,
+      "gauc": 0.6281706383978499,
+      "ndcg10": 0.6773537216096397,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.42323208935923856,
+      "auc": 0.7858884928336181,
+      "gauc": 0.6342375976006267,
+      "ndcg10": 0.704099061230671,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5752538975461645,
+      "auc": 0.7609676860562693,
+      "gauc": 0.5803682307823211,
+      "ndcg10": 0.8124915666096608,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.4026911885520907,
+      "auc": 0.7663386722458572,
+      "gauc": 0.6383181972566743,
+      "ndcg10": 0.679739073088006,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "best_iter": 440,
+    "time": 106.97173190116882,
+    "val": {
+     "all": {
+      "logloss": 0.43208345203055826,
+      "auc": 0.7923880651287973,
+      "gauc": 0.6267563944190524,
+      "ndcg10": 0.7165372269521106,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5731559813981164,
+      "auc": 0.7623798058794413,
+      "gauc": 0.5916544529034956,
+      "ndcg10": 0.8154238021506194,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.40245493766930224,
+      "auc": 0.7615887786514718,
+      "gauc": 0.631839270909801,
+      "ndcg10": 0.679085598563162,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4235202732056544,
+      "auc": 0.7856625112273601,
+      "gauc": 0.635075528924914,
+      "ndcg10": 0.7048798419022416,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5752958934101475,
+      "auc": 0.7608317437995824,
+      "gauc": 0.5809672046798011,
+      "ndcg10": 0.8120855357173644,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.4030126368556747,
+      "auc": 0.7661224114895269,
+      "gauc": 0.6391742295843931,
+      "ndcg10": 0.6807865762190519,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   }
+  ],
+  "importance": {
+   "sum(long_view|video_id+is_rand|all|w=6.35d)": 528729.0070457458,
+   "rate(is_click|user_id|all|w=26.83d|a=10)": 325377.0251612663,
+   "tab": 234872.65299081802,
+   "rate(play_s|user_id+video_type+is_rand|rand|w=inf|a=1)": 181680.17571020126,
+   "is_rand": 150637.39400959015,
+   "drate(is_click|is_video_author+music_id|all|hl=3.427d|a=10)": 100451.06595182419,
+   "drate(is_click|user_id+is_rand|rand|hl=13.36h|a=10)": 90042.72847223282,
+   "tag": 88351.34015893936,
+   "drate(play_ratio|user_id+music_type|std|hl=4.143d|a=10)": 63223.473677158356,
+   "rate(is_click|is_lowactive_period+author_id|std|w=7.636d|a=10)": 56373.755382061005,
+   "drate(is_click|user_id+music_type+is_rand|all|hl=13.36h|a=10)": 42781.82190990448,
+   "rate(play_s|user_id+video_type|all|w=inf|a=1)": 40906.50553560257,
+   "dsum(is_click|video_id|all|hl=1.469d)": 31773.129487514496,
+   "rate(is_click|fans_user_num_range+author_id|all|w=inf|a=10)": 30004.636526107788,
+   "rate(play_s|user_id+video_type|rand|w=inf|a=1)": 24648.184904575348,
+   "dsum(imp|user_id+tag|clicked|hl=18.33h)": 24223.00782585144,
+   "video_duration": 19307.657797813416,
+   "drate(is_click|is_video_author+music_id|rand|hl=3.427d|a=10)": 17300.33289384842,
+   "rate(play_s|user_id+video_type|rand|w=36.46m|a=1)": 16283.688592910767,
+   "recency(imp|user_id+music_type|all)": 14421.773193359375,
+   "sum(play_s|follow_user_num_range+tab|all|w=5.436d)": 14037.747148990631,
+   "recency(play_s|user_id+video_type|rand)": 13934.23314332962,
+   "dsum(imp|user_id+music_type|all|hl=3d)": 11658.79167509079,
+   "sum(play_ratio|user_id+upload_type|clicked|w=inf)": 10558.535388469696,
+   "rate(long_view|user_id+video_type|rand|w=inf|a=1)": 9299.673004627228,
+   "recency(imp|user_id+music_type+hour|all)": 8545.543678760529,
+   "rate(play_s|user_id+video_type|rand|w=inf|a=10)": 7807.884858608246,
+   "sum(play_ratio|user_id+upload_type|rand|w=inf)": 7549.475337028503,
+   "dsum(play_s|video_type+hour|all|hl=8.933h)": 7511.3169050216675,
+   "video_age_h": 7338.814225196838,
+   "recency(long_view|user_id+music_type|all)": 7269.616415977478,
+   "drate(play_ratio|fans_user_num_range+music_id+tab|std|hl=3.318d|a=1)": 7161.365505218506,
+   "drate(play_ratio|author_id|all|hl=2.584d|a=1)": 7076.596186161041,
+   "onehot_feat3": 6895.820135116577,
+   "rate(is_forward|author_id+is_rand|all|w=2.911d|a=10)": 6504.0830245018005,
+   "hour": 6081.9181361198425,
+   "onehot_feat1": 5862.324974060059,
+   "rate(long_view|music_type|all|w=inf|a=10)": 5516.456552028656,
+   "dsum(long_view|user_id+music_type|rand|hl=1.893d)": 5442.469624519348,
+   "register_days": 5113.156473636627,
+   "follow_user_num": 4770.291798591614,
+   "fans_user_num": 4608.283408641815,
+   "friend_user_num": 4583.181164264679,
+   "onehot_feat8": 4513.907245635986,
+   "drate(play_ratio|fans_user_num_range+music_id|all|hl=9.842h|a=10)": 4095.199673652649,
+   "rate(play_s|user_id+music_id|all|w=inf|a=1)": 3680.944954395294,
+   "upload_type": 3678.6376962661743,
+   "user_active_degree": 3225.214382171631,
+   "onehot_feat7": 3135.200535774231,
+   "drate(is_click|user_id+music_type|rand|hl=13.36h|a=10)": 3034.494917869568,
+   "onehot_feat4": 2871.10724401474,
+   "sum(is_click|user_id+author_id|all|w=12.75d)": 2514.2411890029907,
+   "onehot_feat2": 2438.062171936035,
+   "drate(is_click|user_id+music_type+is_rand|rand|hl=13.36h|a=10)": 2419.606069087982,
+   "onehot_feat11": 2139.3005990982056,
+   "onehot_feat0": 2124.7838187217712,
+   "sum(imp|user_id+upload_type|rand|w=inf)": 2027.0020689964294,
+   "music_type": 1609.0558280944824,
+   "server_width": 1367.3520636558533,
+   "server_height": 1260.623990058899
+  }
+ },
+ "autofe_listwise": {
+  "name": "autofe_listwise_constprior",
+  "n_features": 82,
+  "seeds": [
+   {
+    "seed": 0,
+    "best_iter": 604,
+    "time": 116.63192749023438,
+    "val": {
+     "all": {
+      "logloss": 0.46610612189078654,
+      "auc": 0.7411593525912843,
+      "gauc": 0.6553157712900001,
+      "ndcg10": 0.7424368928629785,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.6044315889037262,
+      "auc": 0.7215617442149024,
+      "gauc": 0.6304242115742973,
+      "ndcg10": 0.8351179557043604,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4370545545566377,
+      "auc": 0.6886116544575954,
+      "gauc": 0.6589201509406509,
+      "ndcg10": 0.7073354979844494,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4666082217958113,
+      "auc": 0.7203011098426726,
+      "gauc": 0.65439676709822,
+      "ndcg10": 0.725472074264855,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.6070112451657951,
+      "auc": 0.7161240166960825,
+      "gauc": 0.6198951114327744,
+      "ndcg10": 0.8313907680795627,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.44763722934109496,
+      "auc": 0.6820735766145497,
+      "gauc": 0.6570102643891079,
+      "ndcg10": 0.7016680472577169,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "best_iter": 464,
+    "time": 93.22581124305725,
+    "val": {
+     "all": {
+      "logloss": 0.4669453995568121,
+      "auc": 0.7394872725060373,
+      "gauc": 0.6555803915725872,
+      "ndcg10": 0.7422539116739317,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.6056932608696693,
+      "auc": 0.7198847741200277,
+      "gauc": 0.6289518063534725,
+      "ndcg10": 0.8345776604624154,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.4378051195892588,
+      "auc": 0.6862045536054708,
+      "gauc": 0.6594362982247063,
+      "ndcg10": 0.7072878434876297,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4653272022475635,
+      "auc": 0.7189939494465757,
+      "gauc": 0.6546849678306889,
+      "ndcg10": 0.7253888751566209,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.6071827895524335,
+      "auc": 0.7150691599174694,
+      "gauc": 0.6216580491414629,
+      "ndcg10": 0.8330519470145976,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.44615994208587545,
+      "auc": 0.6804895575761527,
+      "gauc": 0.6571867539292356,
+      "ndcg10": 0.7011928189376679,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "best_iter": 233,
+    "time": 55.55156183242798,
+    "val": {
+     "all": {
+      "logloss": 0.46914081352519277,
+      "auc": 0.7353579995958244,
+      "gauc": 0.6552750093091924,
+      "ndcg10": 0.7423685744168537,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.6074182821098006,
+      "auc": 0.7158570095983551,
+      "gauc": 0.6280648670448248,
+      "ndcg10": 0.8339683287578719,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.44009932697806536,
+      "auc": 0.6800849369757254,
+      "gauc": 0.6592151273326977,
+      "ndcg10": 0.7076767069594951,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4669241464471202,
+      "auc": 0.7143713250320182,
+      "gauc": 0.6548871162009553,
+      "ndcg10": 0.7253376259893269,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.6090563712818783,
+      "auc": 0.7108502618597117,
+      "gauc": 0.6197274460080797,
+      "ndcg10": 0.831512723767492,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.4477195075426799,
+      "auc": 0.6744344133713502,
+      "gauc": 0.6575504580326814,
+      "ndcg10": 0.701475975094931,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   }
+  ],
+  "importance": {
+   "drate(long_view|tag+is_rand|all|hl=4.035d|a=10)": 443885.5046367645,
+   "tab": 356300.57162475586,
+   "is_rand": 308876.3062324524,
+   "dsum(is_click|video_id|all|hl=1.469d)": 104453.76005506516,
+   "tag": 76216.56661319733,
+   "onehot_feat1": 38469.514229774475,
+   "drate(play_ratio|fans_user_num_range+music_id+tab|std|hl=2.477d|a=1)": 35972.35055923462,
+   "video_duration": 33616.33029174805,
+   "onehot_feat3": 25370.611716270447,
+   "follow_user_num": 24148.31945991516,
+   "dsum(imp|video_id|all|hl=23.63h)": 21697.123803138733,
+   "register_days": 21393.28907108307,
+   "onehot_feat8": 17887.639070510864,
+   "user_active_degree": 16664.86928844452,
+   "fans_user_num": 15881.092392921448,
+   "friend_user_num": 12588.449803352356,
+   "onehot_feat7": 11265.279106140137,
+   "dsum(is_click|video_id|rand|hl=1.469d)": 10072.693296432495,
+   "onehot_feat2": 8021.23158454895,
+   "onehot_feat11": 7701.242129325867,
+   "onehot_feat4": 7701.052498817444,
+   "sum(is_click|video_id|all|w=18.44h)": 7474.948536872864,
+   "onehot_feat0": 6726.865290641785,
+   "onehot_feat6": 6383.40411567688,
+   "upload_type": 5364.136723995209,
+   "onehot_feat12": 5254.070679664612,
+   "sum(long_view|dur_bucket|all|w=9.01d)": 4983.51692199707,
+   "sum(imp|register_days_range+video_id|std|w=2.813d)": 4814.62069606781,
+   "onehot_feat9": 4613.126223564148,
+   "dsum(is_profile_enter|register_days_range|all|hl=5.117d)": 4076.119930267334,
+   "onehot_feat10": 4057.621563911438,
+   "drate(is_follow|fans_user_num_range+music_id+tab|std|hl=3.318d|a=1)": 3935.373245239258,
+   "follow_user_num_range": 3607.3858098983765,
+   "friend_user_num_range": 3567.109292984009,
+   "onehot_feat14": 3492.9795055389404,
+   "sum(is_profile_enter|is_video_author|all|w=4.608d)": 3242.1685857772827,
+   "hour": 3065.016345977783,
+   "recency(is_click|follow_user_num_range+music_id|all)": 2802.6374821662903,
+   "dsum(is_click|follow_user_num_range+music_id|all|hl=10.86h)": 2705.241536140442,
+   "dsum(is_profile_enter|music_id|all|hl=6.068d)": 2554.7468423843384,
+   "drate(play_ratio|fans_user_num_range+music_id+tab|rand|hl=3.318d|a=1)": 2544.41250705719,
+   "register_days_range": 2493.2950382232666,
+   "rate(play_s|upload_type+hour|std|w=1.397d|a=10)": 2415.2963914871216,
+   "sum(imp|is_video_author+music_type|clicked|w=4.031d)": 2390.115866661072,
+   "rate(is_click|is_video_author+tag|all|w=1.441d|a=1)": 2301.3723974227905,
+   "sum(imp|fans_user_num_range+hour|all|w=9.697d)": 2226.2420320510864,
+   "sum(is_click|upload_type|all|w=18.44h)": 2042.297212600708,
+   "fans_user_num_range": 2017.7211961746216,
+   "dur_bucket": 1903.8983993530273,
+   "rate(play_s|is_lowactive_period+music_type|std|w=inf|a=10)": 1867.786126613617,
+   "recency(is_forward|video_id|all)": 1571.4493160247803,
+   "onehot_feat13": 1422.69309425354,
+   "sum(is_follow|register_days_range+dur_bucket+is_rand|clicked|w=6.782d)": 1419.850637435913,
+   "onehot_feat16": 1244.7752180099487,
+   "server_width": 1240.9719347953796,
+   "rate(long_view|is_video_author+video_type|all|w=2.131d|a=100)": 1158.3495507240295,
+   "sum(imp|register_days_range+video_id+is_rand|std|w=2.813d)": 1142.5511980056763,
+   "is_live_streamer": 1132.491400718689,
+   "video_age_h": 1071.882562637329,
+   "drate(play_ratio|is_lowactive_period+upload_type|std|hl=18.69m|a=10)": 1070.03639793396
+  }
+ },
+ "llm_agent": {
+  "name": "llm_agent_constprior",
+  "n_features": 60,
+  "seeds": [
+   {
+    "seed": 0,
+    "best_iter": 533,
+    "time": 97.68403816223145,
+    "val": {
+     "all": {
+      "logloss": 0.4294935068895062,
+      "auc": 0.7959707567073463,
+      "gauc": 0.6381964979170409,
+      "ndcg10": 0.7245887018723056,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5710366464469566,
+      "auc": 0.7647049691023188,
+      "gauc": 0.6041350961941578,
+      "ndcg10": 0.8219031525505741,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.3997661534358183,
+      "auc": 0.7662711925888649,
+      "gauc": 0.6431287008261721,
+      "ndcg10": 0.6877324892230062,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.420229609232611,
+      "auc": 0.7906477202763955,
+      "gauc": 0.6476047597795348,
+      "ndcg10": 0.7132484258715791,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5750822410233983,
+      "auc": 0.7613686477461641,
+      "gauc": 0.5956347446689099,
+      "ndcg10": 0.8189412914542777,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.3993062128641818,
+      "auc": 0.7721072569574581,
+      "gauc": 0.6515414837158023,
+      "ndcg10": 0.6894951512022967,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 1,
+    "best_iter": 479,
+    "time": 80.39671993255615,
+    "val": {
+     "all": {
+      "logloss": 0.42959358250140756,
+      "auc": 0.7958957729793334,
+      "gauc": 0.6381969105323227,
+      "ndcg10": 0.7239248521388287,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5711161644694203,
+      "auc": 0.7644685894062501,
+      "gauc": 0.6026094163541141,
+      "ndcg10": 0.8206706253989874,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.3998705466199403,
+      "auc": 0.766127785282896,
+      "gauc": 0.6433500966443475,
+      "ndcg10": 0.6872840165039873,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4201642137411176,
+      "auc": 0.7908514475626063,
+      "gauc": 0.6483416790489026,
+      "ndcg10": 0.7135201495701411,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5747972934584156,
+      "auc": 0.7615383521734662,
+      "gauc": 0.5963409580144698,
+      "ndcg10": 0.819693080361303,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.39927048283593575,
+      "auc": 0.7722798064956333,
+      "gauc": 0.6522807289561167,
+      "ndcg10": 0.6896589856815352,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   },
+   {
+    "seed": 2,
+    "best_iter": 489,
+    "time": 90.85083079338074,
+    "val": {
+     "all": {
+      "logloss": 0.4294583943793242,
+      "auc": 0.795992644397814,
+      "gauc": 0.6376179273955713,
+      "ndcg10": 0.7243458105672194,
+      "n": 442975,
+      "groups": 34762
+     },
+     "std": {
+      "logloss": 0.5708211873699368,
+      "auc": 0.7648060975672469,
+      "gauc": 0.6045944247708869,
+      "ndcg10": 0.822600966280487,
+      "n": 76887,
+      "groups": 9549
+     },
+     "rand": {
+      "logloss": 0.3997689179018946,
+      "auc": 0.7662016878541602,
+      "gauc": 0.6423998391043239,
+      "ndcg10": 0.6871333216961608,
+      "n": 366088,
+      "groups": 25213
+     }
+    },
+    "test": {
+     "all": {
+      "logloss": 0.4199908579538618,
+      "auc": 0.7909054616436786,
+      "gauc": 0.6479858618742592,
+      "ndcg10": 0.7132308479162889,
+      "n": 475980,
+      "groups": 35150
+     },
+     "std": {
+      "logloss": 0.5747842111209774,
+      "auc": 0.7617593143471821,
+      "gauc": 0.5951953891013781,
+      "ndcg10": 0.8196495639054141,
+      "n": 56658,
+      "groups": 6450
+     },
+     "rand": {
+      "logloss": 0.39907547120157494,
+      "auc": 0.7723629006876044,
+      "gauc": 0.6519847354041111,
+      "ndcg10": 0.6893144465877223,
+      "n": 419322,
+      "groups": 28700
+     }
+    }
+   }
+  ],
+  "importance": {
+   "is_rand": 642411.3074645996,
+   "rate(is_click|user_id+tab|all|w=inf|a=10)": 543620.2565982342,
+   "rate(is_click|author_id+tab|all|w=inf|a=30)": 169131.73610377312,
+   "rate(is_click|user_id|std|w=inf|a=10)": 147198.38101959229,
+   "rate(is_click|user_id|rand|w=inf|a=10)": 121472.33853769302,
+   "tab": 106589.4126060009,
+   "rate(is_click|video_id|rand|w=inf|a=20)": 93831.88097715378,
+   "tag": 78135.89525985718,
+   "rate(is_click|music_id|all|w=inf|a=30)": 52821.16737103462,
+   "drate(is_click|user_id|all|hl=3h|a=5)": 42528.908418893814,
+   "drate(is_click|user_id|rand|hl=2d|a=5)": 39701.81874370575,
+   "rate(is_hate|user_id|std|w=inf|a=50)": 37897.01946926117,
+   "rate(is_click|user_id+tag|all|w=inf|a=50)": 33826.23965072632,
+   "recency(imp|user_id+tab|all)": 29283.366138219833,
+   "recency(is_click|user_id+tag|all)": 20718.184662103653,
+   "video_duration": 20493.166310310364,
+   "rate(is_follow|author_id|clicked|w=inf|a=100)": 20371.162006378174,
+   "rate(is_like|video_id|clicked|w=inf|a=50)": 19294.25162601471,
+   "recency(long_view|user_id|all)": 14136.562324762344,
+   "video_age_h": 11118.093793869019,
+   "register_days": 8016.810863018036,
+   "onehot_feat3": 7615.805666923523,
+   "hour": 7376.02830696106,
+   "follow_user_num": 7292.977089881897,
+   "onehot_feat8": 7262.692074298859,
+   "sum(imp|user_id+tab|all|w=15m)": 6687.258229494095,
+   "fans_user_num": 6033.776416778564,
+   "onehot_feat1": 5993.467861175537,
+   "friend_user_num": 5534.507885932922,
+   "onehot_feat7": 4606.853104829788,
+   "upload_type": 4225.6031403541565,
+   "onehot_feat4": 3682.6435198783875,
+   "onehot_feat2": 2677.9367055892944,
+   "onehot_feat0": 2106.563931465149,
+   "weekday": 2017.2700643539429,
+   "server_width": 1890.6094284057617,
+   "onehot_feat9": 1876.396891117096,
+   "dur_bucket": 1822.129520893097,
+   "onehot_feat11": 1775.8669648170471,
+   "user_active_degree": 1582.2513790130615,
+   "fans_user_num_range": 1448.9727911949158,
+   "follow_user_num_range": 1400.1188991069794,
+   "onehot_feat10": 1228.5313301086426,
+   "friend_user_num_range": 1193.549054145813,
+   "server_height": 1090.7997007369995,
+   "n_tags": 952.7626385688782,
+   "onehot_feat6": 863.6806988716125,
+   "onehot_feat12": 857.3908400535583,
+   "register_days_range": 773.1254296302795,
+   "music_type": 705.6822109222412,
+   "onehot_feat14": 533.8484511375427,
+   "onehot_feat13": 483.6026973724365,
+   "is_live_streamer": 346.3298692703247,
+   "onehot_feat16": 307.4935989379883,
+   "is_video_author": 216.19241094589233,
+   "onehot_feat17": 157.44620990753174,
+   "onehot_feat15": 129.981210231781,
+   "onehot_feat5": 92.76488018035889,
+   "video_type": 20.318099975585938,
+   "is_lowactive_period": 0.0
+  }
+ }
+}
